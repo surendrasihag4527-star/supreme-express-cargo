@@ -1,4 +1,4 @@
-# Supreme Express Cargo
+﻿# Supreme Express Cargo
 
 Supreme Express Cargo is a premier national logistics and transportation company established in 2005. It provides a complete transport solution spanning Full Truck Load (FTL), Part Truck Load (PTL), 3PL warehousing, and supply chain management services across India.
 
@@ -9,10 +9,10 @@ Supreme Express Cargo is a premier national logistics and transportation company
 - **Vapi Industrial Hub**: Plot No. 1, Sai Aastha Society, Near Kataria Transport, Degam Road, Dungri Faliya, Vapi, Gujarat, 396191, India
 
 ## Site Map / Pages
-- [Home](https://supremeexpresscargo.com/index.html): Homepage detailing cargo shipment tracking, core services (FTL, PTL, 3PL, warehousing), client testimonials, and legacy.
-- [About Us](https://supremeexpresscargo.com/about.html): Company history since 2005, mission, vision, operational hubs, and attached fleet network.
-- [Services](https://supremeexpresscargo.com/services.html): Dedicated logistics solutions, full descriptions of FTL, PTL, warehousing, and 3PL supply chain services.
-- [Why Choose Us](https://supremeexpresscargo.com/why-choose-us.html): Technical advantages, fleet details, GIDC corridor details, safe and secure handling standards, and performance metrics.
-- [Contact Us](https://supremeexpresscargo.com/contact.html): Office locations, maps, phone numbers, and a direct inquiry form.
-- [Privacy Policy](https://supremeexpresscargo.com/privacy-policy.html): Privacy guidelines and data collection details.
-- [Terms of Service](https://supremeexpresscargo.com/terms-of-service.html): Operational agreements and terms of usage.
+- [Home](https://www.supremeexpresscargo.in/index.html): Homepage detailing cargo shipment tracking, core services (FTL, PTL, 3PL, warehousing), client testimonials, and legacy.
+- [About Us](https://www.supremeexpresscargo.in/about.html): Company history since 2005, mission, vision, operational hubs, and attached fleet network.
+- [Services](https://www.supremeexpresscargo.in/services.html): Dedicated logistics solutions, full descriptions of FTL, PTL, warehousing, and 3PL supply chain services.
+- [Why Choose Us](https://www.supremeexpresscargo.in/why-choose-us.html): Technical advantages, fleet details, GIDC corridor details, safe and secure handling standards, and performance metrics.
+- [Contact Us](https://www.supremeexpresscargo.in/contact.html): Office locations, maps, phone numbers, and a direct inquiry form.
+- [Privacy Policy](https://www.supremeexpresscargo.in/privacy-policy.html): Privacy guidelines and data collection details.
+- [Terms of Service](https://www.supremeexpresscargo.in/terms-of-service.html): Operational agreements and terms of usage.
