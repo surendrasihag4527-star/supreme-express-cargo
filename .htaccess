@@ -1,3 +1,15 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  
+  # Redirect non-WWW to WWW
+  RewriteCond %{HTTP_HOST} ^supremeexpresscargo\.in [NC]
+  RewriteRule ^(.*)$ https://www.supremeexpresscargo.in/$1 [R=301,L]
+  
+  # Redirect index.html to root /
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+  RewriteRule ^index\.html$ https://www.supremeexpresscargo.in/ [R=301,L]
+</IfModule>
+
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresDefault "access plus 1 month"
