@@ -13,7 +13,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Terms of Service | Supreme Express Cargo</title>
 <meta name="description" content="Review the Terms of Service for using Supreme Express Cargo's transportation, shipping, logistics, and warehousing services across India.">
-<meta name="keywords" content="best Transport Company in Vapi, best Logistics Company in Vapi, part load transport in vapi, part load transport in daman, part load transport in silvassa, transporter in vapi for south, All India Transport, Delhi NCR Logistics company, FTL Service">
+<meta name="keywords" content="best Best Transporter & Logistics in Vapi, best Logistics Company in Vapi, part load transport in vapi, part load transport in daman, part load transport in silvassa, transporter in vapi for south, All India Transport, Delhi NCR Logistics company, FTL Service">
 
 <!-- Canonical Tag -->
 <link rel="canonical" href="https://www.supremeexpresscargo.in/terms-of-service.html">
@@ -34,13 +34,19 @@
 <meta name="twitter:description" content="Review the Terms of Service for using Supreme Express Cargo's transportation, shipping, logistics, and warehousing services across India.">
 <meta name="twitter:image" content="images/og-share.jpg">
 
-<!-- Google Analytics (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L3ZZEP1Q2X"></script>
+<!-- Google Analytics (gtag.js) - Deferred to improve speed -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-L3ZZEP1Q2X');
+  window.addEventListener('load', function() {
+    var script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-L3ZZEP1Q2X';
+    script.async = true;
+    document.head.appendChild(script);
+    
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L3ZZEP1Q2X');
+  });
 </script>
 
 <!-- Facebook Pixel Code Disabled (Template contains invalid placeholder keys)
@@ -175,7 +181,7 @@ specializing in FTL(full truck load), PTL(part truck load), and specialized logi
 <ul class="space-y-4">
 <li class="flex items-start gap-4 text-on-tertiary-container group">
 <span class="material-symbols-outlined text-cargo-red flex-shrink-0 mt-0.5">mail</span>
-<a href="#" class="break-all text-body-md hover:text-cargo-red transition-colors email-link email-text" data-user="supremeexpresscargo369" data-domain="gmail.com">Contact Us via Email</a>
+<a href="mailto:supremeexpresscargo369@gmail.com" class="break-all text-body-md hover:text-cargo-red transition-colors">supremeexpresscargo369@gmail.com</a>
 </li>
 <li class="flex items-center gap-4 text-on-tertiary-container group">
 <span class="material-symbols-outlined text-cargo-red flex-shrink-0">call</span>
@@ -203,15 +209,15 @@ specializing in FTL(full truck load), PTL(part truck load), and specialized logi
 </div>
 </div>
 <div class="max-w-container-max mx-auto px-margin-desktop mt-stack-lg pt-stack-md border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-12">
-<p class="text-on-tertiary-container font-label-mono text-label-mono">&copy; 2024 Supreme Express Cargo. A Complete Transport Solution.</p>
+<p class="text-on-tertiary-container font-label-mono text-label-mono">&copy; 2005 Supreme Express Cargo. A Complete Transport Solution.</p>
 <div class="flex gap-6">
 <a class="text-on-tertiary-container hover:text-cargo-red text-xs uppercase font-label-mono" href="privacy-policy.html">Privacy Policy</a>
 <a class="text-on-tertiary-container hover:text-cargo-red text-xs uppercase font-label-mono" href="terms-of-service.html">Terms of Service</a>
-<a class="text-on-tertiary-container hover:text-cargo-red text-xs uppercase font-label-mono" href="best-transporter-delhi-ncr.html">Transporter Delhi-NCR</a>
-<a class="text-on-tertiary-container hover:text-cargo-red text-xs uppercase font-label-mono" href="best-transporter-vapi.html">Transporter Vapi</a>
-<a class="text-on-tertiary-container hover:text-cargo-red text-xs uppercase font-label-mono" href="best-transporter-daman.html">Transporter Daman</a>
-<a class="text-on-tertiary-container hover:text-cargo-red text-xs uppercase font-label-mono" href="best-transporter-silvassa.html">Transporter Silvassa</a>
-<a class="text-on-tertiary-container hover:text-cargo-red text-xs uppercase font-label-mono" href="transport-company-gujarat.html">Transport Gujarat</a>
+<a class="text-on-tertiary-container hover:text-cargo-red text-xs uppercase font-label-mono" href="best-logistics-company-in-delhi-ncr.html">Transporter Delhi-NCR</a>
+<a class="text-on-tertiary-container hover:text-cargo-red text-xs uppercase font-label-mono" href="best-logistics-company-in-vapi.html">Transporter Vapi</a>
+<a class="text-on-tertiary-container hover:text-cargo-red text-xs uppercase font-label-mono" href="best-logistics-company-in-daman.html">Transporter Daman</a>
+<a class="text-on-tertiary-container hover:text-cargo-red text-xs uppercase font-label-mono" href="best-logistics-company-in-silvassa.html">Transporter Silvassa</a>
+<a class="text-on-tertiary-container hover:text-cargo-red text-xs uppercase font-label-mono" href="best-logistics-company-in-gujarat.html">Transport Gujarat</a>
 </div>
 </div>
 </footer>
@@ -281,23 +287,8 @@ specializing in FTL(full truck load), PTL(part truck load), and specialized logi
         }
     }, { passive: true });
 
-    // Email link decoding
-    document.querySelectorAll('.email-link').forEach(link => {
-        const user = link.getAttribute('data-user');
-        const domain = link.getAttribute('data-domain');
-        if (user && domain) {
-            link.href = `mailto:${user}@${domain}`;
-        }
-    });
-    document.querySelectorAll('.email-text').forEach(el => {
-        const link = el.closest('.email-link') || el;
-        const user = link.getAttribute('data-user');
-        const domain = link.getAttribute('data-domain');
-        if (user && domain) {
-            el.textContent = `${user}@${domain}`;
-        }
-    });
-
+    
+    
     // Intersection Observer for fade-in animations
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

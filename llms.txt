@@ -1,6 +1,12 @@
 ﻿# Supreme Express Cargo
 
-Supreme Express Cargo is a premier national logistics and transportation company established in 2005. It provides a complete transport solution spanning Full Truck Load (FTL), Part Truck Load (PTL), 3PL warehousing, and supply chain management services across India.
+## Description
+Supreme Express Cargo is an All-India commercial transporter and 3PL warehousing provider established in 2005. Specializing in Full Truck Load (FTL) transport, Part Truck Load (PTL) shipping, GIDC industrial cargo distribution, and secure supply chain logistics, the company operates daily express routes connecting Delhi-NCR and Gujarat (Vapi, Daman, Silvassa) to pan-India markets.
+
+## Target Audience
+- **Industrial Manufacturers**: GIDC industrial estate managers in Vapi, Daman, Silvassa, and Delhi-NCR requiring FTL container logistics for raw materials (plastics, polymers, textiles, paper, cosmetics) and finished goods.
+- **Corporate Supply Chain Managers**: Logistics professionals seeking reliable 3PL contract warehousing, distribution, and freight forwarding solutions across India.
+- **SMEs & Retail Shippers**: Small and medium enterprises needing consolidated Part Truck Load (PTL) shipping for cost-efficient freight transit.
 
 ## Contact Information
 - **Phone**: +91 9350447369, +91 9810218825, +91 8059557659
