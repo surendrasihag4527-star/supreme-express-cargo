@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Performance Preconnects -->
@@ -9,7 +9,8 @@
 <link rel="preconnect" href="https://connect.facebook.net">
 <!-- Preload LCP Logo -->
 <link rel="preload" as="image" href="images/logo.png" fetchpriority="high">
-<link rel='preload' as='image' href='images/hero-bg.webp' fetchpriority='high'>
+<link rel="preload" as="image" href="images/hero-bg-mobile.webp" media="(max-w: 640px)" fetchpriority="high">
+<link rel="preload" as="image" href="images/hero-bg.webp" media="(min-w: 641px)" fetchpriority="high">
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Best Logistics Company in Delhi NCR, Vapi, Daman & Silvassa | Supreme Express Cargo</title>
@@ -324,7 +325,10 @@
 <section class="relative min-h-screen flex items-center pt-24 pb-12 lg:pt-20 lg:pb-0 overflow-hidden">
 <div class="absolute inset-0 z-0">
 <div class="absolute inset-0 hero-overlay z-10"></div>
-<img decoding="async" width="1024" height="1024" fetchpriority="high" alt="A line of Supreme Express Cargo trucks parked at the loading docks of a large distribution center with a large Supreme Express Cargo sign on the building." class="w-full h-full object-cover" data-alt="A line of Supreme Express Cargo trucks parked at the loading docks of a large distribution center with a large Supreme Express Cargo sign on the building." src="images/hero-bg.webp">
+<picture>
+  <source media="(max-w: 640px)" srcset="images/hero-bg-mobile.webp">
+  <img decoding="async" width="1024" height="1024" fetchpriority="high" alt="A line of Supreme Express Cargo trucks parked at the loading docks of a large distribution center with a large Supreme Express Cargo sign on the building." class="w-full h-full object-cover" data-alt="A line of Supreme Express Cargo trucks parked at the loading docks of a large distribution center with a large Supreme Express Cargo sign on the building." src="images/hero-bg.webp">
+</picture>
 </div>
 <div class="relative z-20 px-margin-mobile lg:px-margin-desktop max-w-container-max mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center fade-in-up">
 <div class="lg:col-span-7 space-y-stack-md text-white">

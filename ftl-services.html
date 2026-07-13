@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Performance Preconnects -->
@@ -9,7 +9,8 @@
 <link rel="preconnect" href="https://connect.facebook.net">
 <!-- Preload LCP Logo -->
 <link rel="preload" as="image" href="images/logo.png" fetchpriority="high">
-<link rel='preload' as='image' href='images/ftl-bg.jpg' fetchpriority='high'>
+<link rel="preload" as="image" href="images/ftl-bg-mobile.webp" media="(max-w: 640px)" fetchpriority="high">
+<link rel="preload" as="image" href="images/ftl-bg.webp" media="(min-w: 641px)" fetchpriority="high">
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Full Truck Load (FTL) Services | Supreme Express Cargo</title>
@@ -27,27 +28,42 @@
 <meta property="og:description" content="Reliable and secure Full Truck Load (FTL) transport services across India. Dedicated high-capacity fleet, GPS tracking, and direct point-to-point transit.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.supremeexpresscargo.in/ftl-services.html">
-<meta property="og:image" content="images/ftl-bg.jpg">
+<meta property="og:image" content="images/ftl-bg.webp">
 
 <!-- X (Twitter) Cards -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Full Truck Load (FTL) Transport Services | Supreme Express Cargo">
 <meta name="twitter:description" content="Reliable and secure Full Truck Load (FTL) transport services across India. Dedicated high-capacity fleet, GPS tracking, and direct point-to-point transit.">
-<meta name="twitter:image" content="images/ftl-bg.jpg">
+<meta name="twitter:image" content="images/ftl-bg.webp">
 
 <!-- Google Analytics (gtag.js) - Deferred to improve speed -->
 <script>
-  window.addEventListener('load', function() {
-    var script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-L3ZZEP1Q2X';
-    script.async = true;
-    document.head.appendChild(script);
+  (function() {
+    var scriptLoaded = false;
+    function loadAnalytics() {
+      if (scriptLoaded) return;
+      scriptLoaded = true;
+      
+      var script = document.createElement('script');
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-L3ZZEP1Q2X';
+      script.async = true;
+      document.head.appendChild(script);
+      
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L3ZZEP1Q2X');
+      
+      # Clean up event listeners
+      window.removeEventListener('scroll', loadAnalytics);
+      window.removeEventListener('mousemove', loadAnalytics);
+      window.removeEventListener('touchstart', loadAnalytics);
+    }
     
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-L3ZZEP1Q2X');
-  });
+    window.addEventListener('scroll', loadAnalytics, { passive: true });
+    window.addEventListener('mousemove', loadAnalytics, { passive: true });
+    window.addEventListener('touchstart', loadAnalytics, { passive: true });
+  })();
 </script>
 
 <!-- Tailwind -->
@@ -199,7 +215,10 @@
 <main class="pt-24 animate-fade-in">
   <!-- Hero Section -->
   <section class="relative h-[400px] flex items-center overflow-hidden">
-    <img decoding="async" width="1000" height="1000" fetchpriority="high" alt="A professional branded Supreme Express Cargo delivery truck representing Full Truck Load services." class="absolute inset-0 w-full h-full object-cover" src="images/ftl-bg.jpg">
+    <picture>
+      <source media="(max-w: 640px)" srcset="images/ftl-bg-mobile.webp">
+      <img decoding="async" width="1000" height="1000" fetchpriority="high" alt="A professional branded Supreme Express Cargo delivery truck representing Full Truck Load services." class="absolute inset-0 w-full h-full object-cover" src="images/ftl-bg.webp">
+    </picture>
     <div class="absolute inset-0 bg-gradient-to-r from-deep-onyx/90 to-deep-onyx/40"></div>
     <div class="relative max-w-container-max mx-auto w-full px-margin-mobile md:px-margin-desktop text-white">
       <span class="font-label-mono text-cargo-red bg-white/10 backdrop-blur-sm px-4 py-1 rounded-full border border-white/20 mb-4 inline-block">PREMIUM FREIGHT SOLUTION</span>
