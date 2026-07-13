@@ -26,27 +26,42 @@
 <meta property="og:description" content="Looking for the best transporter in Silvassa? Supreme Express Cargo is the top logistics company in Silvassa and Dadra & Nagar Haveli. Daily dispatches at best rates.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.supremeexpresscargo.in/best-logistics-company-in-silvassa.html">
-<meta property="og:image" content="images/ftl-bg.jpg">
+<meta property="og:image" content="images/ftl-bg.webp">
 
 <!-- X (Twitter) Cards -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Best Transport & Logistics Service Provider in Silvassa | Supreme Express Cargo">
 <meta name="twitter:description" content="Supreme Express Cargo is the best logistics company in Silvassa. We offer professional FTL trucking, part load transport, and 3PL warehousing in Silvassa GIDC.">
-<meta name="twitter:image" content="images/ftl-bg.jpg">
+<meta name="twitter:image" content="images/ftl-bg.webp">
 
 <!-- Google Analytics (gtag.js) - Deferred to improve speed -->
 <script>
-  window.addEventListener('load', function() {
-    var script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-L3ZZEP1Q2X';
-    script.async = true;
-    document.head.appendChild(script);
+  (function() {
+    var scriptLoaded = false;
+    function loadAnalytics() {
+      if (scriptLoaded) return;
+      scriptLoaded = true;
+      
+      var script = document.createElement('script');
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-L3ZZEP1Q2X';
+      script.async = true;
+      document.head.appendChild(script);
+      
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L3ZZEP1Q2X');
+      
+      // Clean up event listeners
+      window.removeEventListener('scroll', loadAnalytics);
+      window.removeEventListener('mousemove', loadAnalytics);
+      window.removeEventListener('touchstart', loadAnalytics);
+    }
     
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-L3ZZEP1Q2X');
-  });
+    window.addEventListener('scroll', loadAnalytics, { passive: true });
+    window.addEventListener('mousemove', loadAnalytics, { passive: true });
+    window.addEventListener('touchstart', loadAnalytics, { passive: true });
+  })();
 </script>
 
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" media="print" onload="this.media='all'">
@@ -682,7 +697,7 @@
           <div class="grid grid-cols-2 gap-4">
             <div class="space-y-4 pt-12">
               <div class="bg-white/5 rounded-xl p-4 border border-white/10 shadow-lg hover:-translate-y-1 transition-transform">
-                <img decoding="async" loading="lazy" width="400" height="160" alt="Real-time technology logistics tracking screen on a mobile phone showing transit route" class="w-full h-40 object-cover rounded-lg mb-4" src="images/realtime-tracking.jpg">
+                <img decoding="async" loading="lazy" width="400" height="160" alt="Real-time technology logistics tracking screen on a mobile phone showing transit route" class="w-full h-40 object-cover rounded-lg mb-4" src="images/realtime-tracking.webp">
                 <span class="font-label-mono text-xs text-cargo-red uppercase">Real-time Tech</span>
               </div>
               <div class="bg-white/5 rounded-xl p-4 border border-white/10 shadow-lg hover:-translate-y-1 transition-transform">
@@ -696,7 +711,7 @@
                 <p class="text-slate-400 text-xs">Dedicated attached modern fleet vehicles on the road.</p>
               </div>
               <div class="bg-white/5 rounded-xl p-4 border border-white/10 shadow-lg hover:-translate-y-1 transition-transform">
-                <img decoding="async" loading="lazy" width="400" height="192" alt="Secure warehousing facility with neatly organized cargo and high-density shelving" class="w-full h-48 object-cover rounded-lg mb-4" src="images/secure-warehousing.jpg">
+                <img decoding="async" loading="lazy" width="400" height="192" alt="Secure warehousing facility with neatly organized cargo and high-density shelving" class="w-full h-48 object-cover rounded-lg mb-4" src="images/secure-warehousing.webp">
                 <span class="font-label-mono text-xs text-cargo-red uppercase">Secure Warehousing</span>
               </div>
             </div>

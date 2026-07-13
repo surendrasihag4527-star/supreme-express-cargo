@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://connect.facebook.net">
 <!-- Preload LCP Logo -->
 <link rel="preload" as="image" href="images/logo.png" fetchpriority="high">
-<link rel='preload' as='image' href='images/services-hub.jpg' fetchpriority='high'>
+<link rel='preload' as='image' href='images/services-hub.webp' fetchpriority='high'>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Our Logistics & Transport Services | Supreme Express Cargo</title>
@@ -37,17 +37,32 @@
 
 <!-- Google Analytics (gtag.js) - Deferred to improve speed -->
 <script>
-  window.addEventListener('load', function() {
-    var script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-L3ZZEP1Q2X';
-    script.async = true;
-    document.head.appendChild(script);
+  (function() {
+    var scriptLoaded = false;
+    function loadAnalytics() {
+      if (scriptLoaded) return;
+      scriptLoaded = true;
+      
+      var script = document.createElement('script');
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-L3ZZEP1Q2X';
+      script.async = true;
+      document.head.appendChild(script);
+      
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L3ZZEP1Q2X');
+      
+      // Clean up event listeners
+      window.removeEventListener('scroll', loadAnalytics);
+      window.removeEventListener('mousemove', loadAnalytics);
+      window.removeEventListener('touchstart', loadAnalytics);
+    }
     
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-L3ZZEP1Q2X');
-  });
+    window.addEventListener('scroll', loadAnalytics, { passive: true });
+    window.addEventListener('mousemove', loadAnalytics, { passive: true });
+    window.addEventListener('touchstart', loadAnalytics, { passive: true });
+  })();
 </script>
 
 <!-- Facebook Pixel Code Disabled (Template contains invalid placeholder keys)
@@ -133,7 +148,7 @@
 <!-- Hero Header -->
 <section class="relative h-[400px] flex items-center overflow-hidden">
 <div class="absolute inset-0 z-0">
-<img decoding="async" width="1280" height="720" fetchpriority="high" alt="A wide-angle cinematic shot of a massive logistics hub with rows of red and white cargo containers." class="w-full h-full object-cover" data-alt="A wide-angle cinematic shot of a massive logistics hub with rows of red and white cargo containers. The lighting is early morning sun, casting long dramatic shadows across the pavement. The overall mood is powerful and industrial, dominated by a clean white and vibrant red color scheme, symbolizing global trade efficiency and reliable momentum." src="images/services-hub.jpg">
+<img decoding="async" width="1280" height="720" fetchpriority="high" alt="A wide-angle cinematic shot of a massive logistics hub with rows of red and white cargo containers." class="w-full h-full object-cover" data-alt="A wide-angle cinematic shot of a massive logistics hub with rows of red and white cargo containers. The lighting is early morning sun, casting long dramatic shadows across the pavement. The overall mood is powerful and industrial, dominated by a clean white and vibrant red color scheme, symbolizing global trade efficiency and reliable momentum." src="images/services-hub.webp">
 <div class="absolute inset-0 bg-gradient-to-r from-deep-onyx/90 to-transparent"></div>
 </div>
 <div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full text-center md:text-left fade-in-up">
@@ -169,7 +184,7 @@
 </div>
 </div>
 <div class="w-full md:w-64 h-48 rounded-lg overflow-hidden shrink-0">
-<img decoding="async" width="1000" height="1000" loading="lazy" alt="A professional branded Supreme Express Cargo delivery truck." class="w-full h-full object-cover" data-alt="A professional branded Supreme Express Cargo delivery truck." src="images/ftl-bg.jpg">
+<img decoding="async" width="1000" height="1000" loading="lazy" alt="A professional branded Supreme Express Cargo delivery truck." class="w-full h-full object-cover" data-alt="A professional branded Supreme Express Cargo delivery truck." src="images/ftl-bg.webp">
 </div>
 </div>
 <!-- 2. Part Truck Load (PTL) -->
@@ -212,7 +227,7 @@
 </div>
 </div>
 <div class="w-full md:w-72 h-64 rounded-lg overflow-hidden shrink-0">
-<img decoding="async" loading="lazy" alt="An expansive view inside a high-tech warehouse with high-reaching racks perfectly aligned." class="w-full h-full object-cover" data-alt="An expansive view inside a high-tech warehouse with high-reaching racks perfectly aligned. The lighting is cool-toned and clinical, highlighting the industrial precision and massive scale. The image has a clean, organized aesthetic with hints of the brand's red appearing on safety railings and forklift details." width="800" height="400" src="images/services-warehouse.jpg">
+<img decoding="async" loading="lazy" alt="An expansive view inside a high-tech warehouse with high-reaching racks perfectly aligned." class="w-full h-full object-cover" data-alt="An expansive view inside a high-tech warehouse with high-reaching racks perfectly aligned. The lighting is cool-toned and clinical, highlighting the industrial precision and massive scale. The image has a clean, organized aesthetic with hints of the brand's red appearing on safety railings and forklift details." width="800" height="400" src="images/services-warehouse.webp">
 </div>
 </div>
 </div>

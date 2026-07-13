@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://connect.facebook.net">
 <!-- Preload LCP Logo -->
 <link rel="preload" as="image" href="images/logo.png" fetchpriority="high">
-<link rel='preload' as='image' href='images/contact-hub.jpg' fetchpriority='high'>
+<link rel='preload' as='image' href='images/contact-hub.webp' fetchpriority='high'>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Contact Us | Supreme Express Cargo</title>
@@ -37,17 +37,32 @@
 
 <!-- Google Analytics (gtag.js) - Deferred to improve speed -->
 <script>
-  window.addEventListener('load', function() {
-    var script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-L3ZZEP1Q2X';
-    script.async = true;
-    document.head.appendChild(script);
+  (function() {
+    var scriptLoaded = false;
+    function loadAnalytics() {
+      if (scriptLoaded) return;
+      scriptLoaded = true;
+      
+      var script = document.createElement('script');
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-L3ZZEP1Q2X';
+      script.async = true;
+      document.head.appendChild(script);
+      
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L3ZZEP1Q2X');
+      
+      // Clean up event listeners
+      window.removeEventListener('scroll', loadAnalytics);
+      window.removeEventListener('mousemove', loadAnalytics);
+      window.removeEventListener('touchstart', loadAnalytics);
+    }
     
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-L3ZZEP1Q2X');
-  });
+    window.addEventListener('scroll', loadAnalytics, { passive: true });
+    window.addEventListener('mousemove', loadAnalytics, { passive: true });
+    window.addEventListener('touchstart', loadAnalytics, { passive: true });
+  })();
 </script>
 
 <!-- Facebook Pixel Code Disabled (Template contains invalid placeholder keys)
@@ -139,7 +154,7 @@
 <!-- Hero Section -->
 <section class="relative h-[400px] flex items-center overflow-hidden bg-deep-onyx">
 <div class="absolute inset-0 z-0">
-<img decoding="async" width="1280" height="720" fetchpriority="high" alt="A high-exposure nighttime shot of a modern logistics hub with glowing cargo containers." class="w-full h-full object-cover opacity-40" data-alt="A high-exposure nighttime shot of a modern logistics hub with glowing cargo containers and a fleet of red delivery trucks. The atmosphere is professional and high-speed, emphasizing reliability and momentum. The lighting is dominated by cool industrial tones with sharp, vibrant red highlights that mirror the Supreme Express Cargo brand identity. The wide-angle composition creates a sense of vast scale and global reach." src="images/contact-hub.jpg">
+<img decoding="async" width="1280" height="720" fetchpriority="high" alt="A high-exposure nighttime shot of a modern logistics hub with glowing cargo containers." class="w-full h-full object-cover opacity-40" data-alt="A high-exposure nighttime shot of a modern logistics hub with glowing cargo containers and a fleet of red delivery trucks. The atmosphere is professional and high-speed, emphasizing reliability and momentum. The lighting is dominated by cool industrial tones with sharp, vibrant red highlights that mirror the Supreme Express Cargo brand identity. The wide-angle composition creates a sense of vast scale and global reach." src="images/contact-hub.webp">
 </div>
 <div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full fade-in-up"><h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-white mb-4">Contact Supreme Express Cargo</h1><p class="font-body-md md:font-body-lg text-body-md md:text-body-lg text-surface-variant max-w-xl">We're here to streamline your logistics. Reach out to our team of experts for tailored transport solutions across India.</p></div>
 </section>

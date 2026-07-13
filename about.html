@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://connect.facebook.net">
 <!-- Preload LCP Logo -->
 <link rel="preload" as="image" href="images/logo.png" fetchpriority="high">
-<link rel='preload' as='image' href='images/about-bg.jpg' fetchpriority='high'>
+<link rel='preload' as='image' href='images/about-bg.webp' fetchpriority='high'>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>About Us | Supreme Express Cargo - Logistics Since 2005</title>
@@ -37,17 +37,32 @@
 
 <!-- Google Analytics (gtag.js) - Deferred to improve speed -->
 <script>
-  window.addEventListener('load', function() {
-    var script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-L3ZZEP1Q2X';
-    script.async = true;
-    document.head.appendChild(script);
+  (function() {
+    var scriptLoaded = false;
+    function loadAnalytics() {
+      if (scriptLoaded) return;
+      scriptLoaded = true;
+      
+      var script = document.createElement('script');
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-L3ZZEP1Q2X';
+      script.async = true;
+      document.head.appendChild(script);
+      
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L3ZZEP1Q2X');
+      
+      // Clean up event listeners
+      window.removeEventListener('scroll', loadAnalytics);
+      window.removeEventListener('mousemove', loadAnalytics);
+      window.removeEventListener('touchstart', loadAnalytics);
+    }
     
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-L3ZZEP1Q2X');
-  });
+    window.addEventListener('scroll', loadAnalytics, { passive: true });
+    window.addEventListener('mousemove', loadAnalytics, { passive: true });
+    window.addEventListener('touchstart', loadAnalytics, { passive: true });
+  })();
 </script>
 
 <!-- Facebook Pixel Code Disabled (Template contains invalid placeholder keys)
@@ -132,7 +147,7 @@
 <main class="pt-24">
 <!-- Hero Section -->
 <section class="relative h-[614px] flex items-center overflow-hidden">
-<img decoding="async" width="512" height="512" fetchpriority="high" alt="A cargo aircraft and a fleet of logistics trucks at a sun-drenched industrial port during the golden hour." class="absolute inset-0 w-full h-full object-cover" data-alt="A cargo aircraft and a fleet of logistics trucks at a sun-drenched industrial port during the golden hour." src="images/about-bg.jpg">
+<img decoding="async" width="512" height="512" fetchpriority="high" alt="A cargo aircraft and a fleet of logistics trucks at a sun-drenched industrial port during the golden hour." class="absolute inset-0 w-full h-full object-cover" data-alt="A cargo aircraft and a fleet of logistics trucks at a sun-drenched industrial port during the golden hour." src="images/about-bg.webp">
 <div class="absolute inset-0 bg-gradient-to-r from-deep-onyx/80 to-transparent"></div>
 <div class="relative max-w-container-max mx-auto w-full px-margin-mobile md:px-margin-desktop fade-in-up">
 <span class="font-label-mono text-cargo-red bg-white/10 backdrop-blur-md px-4 py-1 rounded-full border border-white/20 mb-4 inline-block">ESTABLISHED 2005</span>
@@ -171,7 +186,7 @@
 <section class="bg-surface-container py-stack-lg fade-in-up">
 <div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center px-margin-mobile md:px-margin-desktop">
 <div class="relative group">
-<img decoding="async" loading="lazy" alt="An expansive, high-tech warehouse interior featuring automated sorting systems and high-density shelving." class="rounded-lg shadow-xl relative z-10 w-full h-[500px] object-cover group-hover:scale-[1.02] transition-transform duration-500" data-alt="An expansive, high-tech warehouse interior featuring automated sorting systems and high-density shelving. The lighting is crisp and cool, highlighting the industrial steel-gray surfaces and bright red safety markers. The image captures the organized precision of a modern logistics center, reflecting a mood of efficiency and technological sophistication in a professional corporate style." width="800" height="300" src="images/about-warehouse.jpg">
+<img decoding="async" loading="lazy" alt="An expansive, high-tech warehouse interior featuring automated sorting systems and high-density shelving." class="rounded-lg shadow-xl relative z-10 w-full h-[500px] object-cover group-hover:scale-[1.02] transition-transform duration-500" data-alt="An expansive, high-tech warehouse interior featuring automated sorting systems and high-density shelving. The lighting is crisp and cool, highlighting the industrial steel-gray surfaces and bright red safety markers. The image captures the organized precision of a modern logistics center, reflecting a mood of efficiency and technological sophistication in a professional corporate style." width="800" height="300" src="images/about-warehouse.webp">
 <div class="absolute -bottom-6 -right-6 w-64 h-64 bg-cargo-red -z-0 opacity-10"></div>
 </div>
 <div class="space-y-stack-md text-center md:text-left">
@@ -219,7 +234,7 @@ Our vision is to build long-term customer trust through dependable service, stro
 <!-- Delhi Office -->
 <div class="group cursor-pointer">
 <div class="overflow-hidden rounded-lg mb-6 relative">
-<img decoding="async" loading="lazy" width="800" height="300" alt="A modern corporate office building facade in Delhi NCR during twilight." class="w-full h-[300px] object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A modern corporate office building facade in Delhi NCR during twilight. The building features sleek glass windows reflecting a deep blue sky, with bright interior lights creating a warm glow. The architectural style is professional and minimalist, set against a clean urban environment that suggests a high-trust, premium corporate presence." src="images/about-office.jpg">
+<img decoding="async" loading="lazy" width="800" height="300" alt="A modern corporate office building facade in Delhi NCR during twilight." class="w-full h-[300px] object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A modern corporate office building facade in Delhi NCR during twilight. The building features sleek glass windows reflecting a deep blue sky, with bright interior lights creating a warm glow. The architectural style is professional and minimalist, set against a clean urban environment that suggests a high-trust, premium corporate presence." src="images/about-office.webp">
 <div class="absolute top-4 right-4 bg-cargo-red text-white px-3 py-1 text-label-mono rounded shadow-lg">HEAD OFFICE</div>
 </div>
 <h3 class="font-headline-md text-headline-md mb-2">Delhi NCR Hub</h3>
@@ -232,7 +247,7 @@ Our vision is to build long-term customer trust through dependable service, stro
 <!-- Vapi Office -->
 <div class="group cursor-pointer">
 <div class="overflow-hidden rounded-lg mb-6 relative">
-<img decoding="async" loading="lazy" width="800" height="300" alt="A busy industrial logistics hub in Vapi, Gujarat, showing several large shipping containers being moved." class="w-full h-[300px] object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A busy industrial logistics hub in Vapi, Gujarat, showing several large shipping containers being moved by heavy-duty cranes under a bright, midday sun. The industrial setting is clean and organized, with a focus on vibrant colors and metallic textures. The mood is one of intense productivity and cargo-focused movement in an efficient corporate setting." src="images/about-hub.jpg">
+<img decoding="async" loading="lazy" width="800" height="300" alt="A busy industrial logistics hub in Vapi, Gujarat, showing several large shipping containers being moved." class="w-full h-[300px] object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A busy industrial logistics hub in Vapi, Gujarat, showing several large shipping containers being moved by heavy-duty cranes under a bright, midday sun. The industrial setting is clean and organized, with a focus on vibrant colors and metallic textures. The mood is one of intense productivity and cargo-focused movement in an efficient corporate setting." src="images/about-hub.webp">
 <div class="absolute top-4 right-4 bg-deep-onyx text-white px-3 py-1 text-label-mono rounded shadow-lg">BRANCH OFFICE</div>
 </div>
 <h3 class="font-headline-md text-headline-md mb-2">Vapi Industrial Hub</h3>

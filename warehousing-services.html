@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://connect.facebook.net">
 <!-- Preload LCP Logo -->
 <link rel="preload" as="image" href="images/logo.png" fetchpriority="high">
-<link rel='preload' as='image' href='images/services-warehouse.jpg=w1280' fetchpriority='high'>
+<link rel='preload' as='image' href='images/services-warehouse.webp=w1280' fetchpriority='high'>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Industrial Warehousing & Storage | Supreme Express Cargo</title>
@@ -27,27 +27,42 @@
 <meta property="og:description" content="Secure, climate-controlled industrial warehousing and inventory storage solutions. Advanced inventory management with 24/7 access and tracking.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.supremeexpresscargo.in/warehousing-services.html">
-<meta property="og:image" content="images/services-warehouse.jpg=w1280">
+<meta property="og:image" content="images/services-warehouse.webp=w1280">
 
 <!-- X (Twitter) Cards -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Industrial Warehousing & Storage Services | Supreme Express Cargo">
 <meta name="twitter:description" content="Secure, climate-controlled industrial warehousing and inventory storage solutions. Advanced inventory management with 24/7 access and tracking.">
-<meta name="twitter:image" content="images/services-warehouse.jpg=w1280">
+<meta name="twitter:image" content="images/services-warehouse.webp=w1280">
 
 <!-- Google Analytics (gtag.js) - Deferred to improve speed -->
 <script>
-  window.addEventListener('load', function() {
-    var script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-L3ZZEP1Q2X';
-    script.async = true;
-    document.head.appendChild(script);
+  (function() {
+    var scriptLoaded = false;
+    function loadAnalytics() {
+      if (scriptLoaded) return;
+      scriptLoaded = true;
+      
+      var script = document.createElement('script');
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-L3ZZEP1Q2X';
+      script.async = true;
+      document.head.appendChild(script);
+      
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L3ZZEP1Q2X');
+      
+      // Clean up event listeners
+      window.removeEventListener('scroll', loadAnalytics);
+      window.removeEventListener('mousemove', loadAnalytics);
+      window.removeEventListener('touchstart', loadAnalytics);
+    }
     
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-L3ZZEP1Q2X');
-  });
+    window.addEventListener('scroll', loadAnalytics, { passive: true });
+    window.addEventListener('mousemove', loadAnalytics, { passive: true });
+    window.addEventListener('touchstart', loadAnalytics, { passive: true });
+  })();
 </script>
 
 <!-- Tailwind -->
@@ -201,7 +216,7 @@
 <main class="pt-24">
   <!-- Hero Section -->
   <section class="relative h-[400px] flex items-center overflow-hidden">
-    <img decoding="async" width="1280" height="720" fetchpriority="high" alt="Modern warehousing facility with high-density storage racking systems and forklift operations representing Warehousing services" class="absolute inset-0 w-full h-full object-cover" src="images/services-warehouse.jpg=w1280">
+    <img decoding="async" width="1280" height="720" fetchpriority="high" alt="Modern warehousing facility with high-density storage racking systems and forklift operations representing Warehousing services" class="absolute inset-0 w-full h-full object-cover" src="images/services-warehouse.webp=w1280">
     <div class="absolute inset-0 bg-gradient-to-r from-deep-onyx/90 to-deep-onyx/40"></div>
     <div class="relative max-w-container-max mx-auto w-full px-margin-mobile md:px-margin-desktop text-white">
       <span class="font-label-mono text-cargo-red bg-white/10 backdrop-blur-sm px-4 py-1 rounded-full border border-white/20 mb-4 inline-block">SECURE STORAGE SPACE</span>
