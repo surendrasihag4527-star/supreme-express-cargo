@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Performance Preconnects -->
@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://connect.facebook.net">
 <!-- Preload LCP Logo -->
 <link rel="preload" as="image" href="images/logo.png" fetchpriority="high">
-<link rel='preload' as='image' href='images/hero-bg.jpg' fetchpriority='high'>
+<link rel='preload' as='image' href='images/hero-bg.webp' fetchpriority='high'>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Best Logistics Company in Delhi NCR, Vapi, Daman & Silvassa | Supreme Express Cargo</title>
@@ -27,27 +27,42 @@
 <meta property="og:description" content="Supreme Express Cargo is the best logistics company in Delhi NCR, Vapi, Daman & Silvassa. We offer reliable FTL transport, part load cargo shipping.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.supremeexpresscargo.in/">
-<meta property="og:image" content="images/hero-bg.jpg">
+<meta property="og:image" content="images/hero-bg.webp">
 
 <!-- X (Twitter) Cards -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Best Transport & Logistics Company in Delhi NCR, Vapi, Daman & Silvassa | Supreme Express Cargo">
 <meta name="twitter:description" content="Supreme Express Cargo is the best logistics company in Delhi NCR, Vapi, Daman & Silvassa. We offer reliable FTL transport, part load cargo shipping.">
-<meta name="twitter:image" content="images/hero-bg.jpg">
+<meta name="twitter:image" content="images/hero-bg.webp">
 
 <!-- Google Analytics (gtag.js) - Deferred to improve speed -->
 <script>
-  window.addEventListener('load', function() {
-    var script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-L3ZZEP1Q2X';
-    script.async = true;
-    document.head.appendChild(script);
+  (function() {
+    var scriptLoaded = false;
+    function loadAnalytics() {
+      if (scriptLoaded) return;
+      scriptLoaded = true;
+      
+      var script = document.createElement('script');
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-L3ZZEP1Q2X';
+      script.async = true;
+      document.head.appendChild(script);
+      
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L3ZZEP1Q2X');
+      
+      # Clean up event listeners
+      window.removeEventListener('scroll', loadAnalytics);
+      window.removeEventListener('mousemove', loadAnalytics);
+      window.removeEventListener('touchstart', loadAnalytics);
+    }
     
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-L3ZZEP1Q2X');
-  });
+    window.addEventListener('scroll', loadAnalytics, { passive: true });
+    window.addEventListener('mousemove', loadAnalytics, { passive: true });
+    window.addEventListener('touchstart', loadAnalytics, { passive: true });
+  })();
 </script>
 
 <!-- Facebook Pixel Code Disabled (Template contains invalid placeholder keys)
@@ -309,7 +324,7 @@
 <section class="relative min-h-screen flex items-center pt-24 pb-12 lg:pt-20 lg:pb-0 overflow-hidden">
 <div class="absolute inset-0 z-0">
 <div class="absolute inset-0 hero-overlay z-10"></div>
-<img decoding="async" width="1024" height="1024" fetchpriority="high" alt="A line of Supreme Express Cargo trucks parked at the loading docks of a large distribution center with a large Supreme Express Cargo sign on the building." class="w-full h-full object-cover" data-alt="A line of Supreme Express Cargo trucks parked at the loading docks of a large distribution center with a large Supreme Express Cargo sign on the building." src="images/hero-bg.jpg">
+<img decoding="async" width="1024" height="1024" fetchpriority="high" alt="A line of Supreme Express Cargo trucks parked at the loading docks of a large distribution center with a large Supreme Express Cargo sign on the building." class="w-full h-full object-cover" data-alt="A line of Supreme Express Cargo trucks parked at the loading docks of a large distribution center with a large Supreme Express Cargo sign on the building." src="images/hero-bg.webp">
 </div>
 <div class="relative z-20 px-margin-mobile lg:px-margin-desktop max-w-container-max mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center fade-in-up">
 <div class="lg:col-span-7 space-y-stack-md text-white">
@@ -373,7 +388,7 @@ Track Now
 <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
 <div class="relative">
 <div class="aspect-square bg-slate-100 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow">
-<img decoding="async" loading="lazy" width="600" height="600" alt="A portrait of a senior logistics manager standing in front of a busy shipping container terminal. He is wearing a high-visibility vest and holding a digital tablet. The background is filled with stacked multi-colored shipping containers under a bright midday sun, creating a high-trust, industrial professionalism vibe with vibrant reds and industrial grays." class="w-full h-full object-cover" data-alt="A portrait of a senior logistics manager standing in front of a busy shipping container terminal. He is wearing a high-visibility vest and holding a digital tablet. The background is filled with stacked multi-colored shipping containers under a bright midday sun, creating a high-trust, industrial professionalism vibe with vibrant reds and industrial grays." src="images/legacy-manager.jpg">
+<img decoding="async" loading="lazy" width="600" height="600" alt="A portrait of a senior logistics manager standing in front of a busy shipping container terminal. He is wearing a high-visibility vest and holding a digital tablet. The background is filled with stacked multi-colored shipping containers under a bright midday sun, creating a high-trust, industrial professionalism vibe with vibrant reds and industrial grays." class="w-full h-full object-cover" data-alt="A portrait of a senior logistics manager standing in front of a busy shipping container terminal. He is wearing a high-visibility vest and holding a digital tablet. The background is filled with stacked multi-colored shipping containers under a bright midday sun, creating a high-trust, industrial professionalism vibe with vibrant reds and industrial grays." src="images/legacy-manager.webp">
 </div>
 <div class="absolute -bottom-6 -right-6 bg-cargo-red text-white p-8 rounded-xl shadow-2xl hidden md:block">
 <div class="text-4xl font-extrabold">19+</div>
@@ -493,7 +508,7 @@ Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
 <div class="grid grid-cols-2 gap-4">
 <div class="space-y-4 pt-12">
 <div class="bg-white/5 rounded-xl p-4 border border-white/10 shadow-lg hover:-translate-y-1 transition-transform">
-<img decoding="async" loading="lazy" width="400" height="160" alt="Real-time technology logistics tracking screen on a mobile phone showing transit route" class="w-full h-40 object-cover rounded-lg mb-4" src="images/realtime-tracking.jpg">
+<img decoding="async" loading="lazy" width="400" height="160" alt="Real-time technology logistics tracking screen on a mobile phone showing transit route" class="w-full h-40 object-cover rounded-lg mb-4" src="images/realtime-tracking.webp">
 <span class="font-label-mono text-xs text-cargo-red uppercase">Real-time Tech</span>
 </div>
 <div class="bg-white/5 rounded-xl p-4 border border-white/10 shadow-lg hover:-translate-y-1 transition-transform">
@@ -507,7 +522,7 @@ Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
 <p class="text-slate-400 text-xs">Dedicated attached modern fleet vehicles on the road.</p>
 </div>
 <div class="bg-white/5 rounded-xl p-4 border border-white/10 shadow-lg hover:-translate-y-1 transition-transform">
-<img decoding="async" loading="lazy" width="400" height="192" alt="Secure warehousing facility with neatly organized cargo and high-density shelving" class="w-full h-48 object-cover rounded-lg mb-4" src="images/secure-warehousing.jpg">
+<img decoding="async" loading="lazy" width="400" height="192" alt="Secure warehousing facility with neatly organized cargo and high-density shelving" class="w-full h-48 object-cover rounded-lg mb-4" src="images/secure-warehousing.webp">
 <span class="font-label-mono text-xs text-cargo-red uppercase">Secure Warehousing</span>
 </div>
 </div>
