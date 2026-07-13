@@ -211,7 +211,7 @@
 <header class="fixed w-full top-0 z-50 shadow-sm bg-surface/95 backdrop-blur-md dark:bg-deep-onyx transition-all duration-300" id="main-header">
 <nav class="flex justify-between items-center px-margin-mobile lg:px-margin-desktop py-4 max-w-container-max mx-auto">
 <div class="flex items-center gap-4">
-<a href="index.html"><img width="250" height="64" fetchpriority="high" alt="Supreme Express Cargo Logo" class="h-12 md:h-16 w-auto object-contain" src="images/logo.png"></a>
+<a href="index.html"><img decoding="async" width="250" height="64" fetchpriority="high" alt="Supreme Express Cargo Logo" class="h-12 md:h-16 w-auto object-contain" src="images/logo.png"></a>
 </div>
 <div class="hidden lg:flex items-center gap-8">
 <a class="text-on-surface dark:text-on-secondary-fixed-variant hover:text-cargo-red transition-colors font-headline-md text-body-md" href="index.html">Home</a>
@@ -245,194 +245,648 @@
 </div>
 
 <main class="pt-24 bg-slate-50">
-  <!-- Hero Section -->
+  <!-- Modern Split Hero Section -->
   <section class="relative min-h-[400px] flex items-center overflow-hidden bg-deep-onyx text-white py-12">
     <!-- Geometric decorative background glow -->
-    <div class="absolute inset-0 bg-[radial-gradient(#E31E24_1px,transparent_1px)] [background-size:16px_16px] opacity-10 z-0"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(#E31E24_1px,transparent_1px)] [background-size:20px_20px] opacity-10 z-0"></div>
     
-    <div class="relative z-10 max-w-container-max mx-auto w-full px-margin-mobile md:px-margin-desktop text-white">
-      <span class="font-label-mono text-cargo-red bg-white/10 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/20 mb-4 inline-block font-semibold tracking-wider text-xs">DADRA & NAGAR HAVELI UNION TERRITORY</span>
-      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white font-display-lg mb-4">
-        Best Logistics Company <br class="hidden md:inline"><span class="text-cargo-red">in Silvassa</span>
-      </h1>
-      <p class="font-body-lg text-white/80 max-w-2xl text-base md:text-lg">Premium textile yarn container shipping, paper roll transport, and customized factory warehouse logistics in Silvassa.</p>
+    <div class="relative z-10 max-w-container-max mx-auto w-full px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <!-- Left Hero Text -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/20 text-xs font-semibold tracking-wider uppercase text-cargo-red">
+          <span class="w-2 h-2 bg-cargo-red rounded-full"></span> Union Territory Logistics Portal
+        </div>
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white font-display-lg">
+          Best Logistics Company <br class="hidden md:inline"><span class="text-cargo-red">in Silvassa</span>
+        </h1>
+        <p class="text-white/80 text-base md:text-lg max-w-xl leading-relaxed">
+          Premium textile yarn container shipping, high-capacity paper roll transport, and customized factory warehouse logistics in Dadra & Nagar Haveli.
+        </p>
+        <div class="flex flex-wrap gap-4 pt-2">
+          <a href="contact.html" class="bg-cargo-red hover:bg-red-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-cargo-red/20 transition-all hover:scale-95">Book Transport Now</a>
+          <a href="#estates" class="border border-white/20 hover:border-white text-white font-semibold px-8 py-4 rounded-xl backdrop-blur-sm transition-all hover:bg-white/10">Explore GIDC Zones</a>
+        </div>
+      </div>
+      
+      <!-- Right Hero Info Card (Floating glass panel) -->
+      <div class="lg:col-span-5">
+        <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 shadow-2xl relative z-10">
+          <div class="text-lg font-bold text-white mb-6 border-b border-white/10 pb-3 flex items-center gap-2">
+            <span class="material-symbols-outlined text-cargo-red">verified</span> Silvassa Hub Performance
+          </div>
+          <div class="grid grid-cols-2 gap-6 text-center">
+            <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+              <span class="block text-3xl font-extrabold text-cargo-red">Daily</span>
+              <span class="text-xs text-white/60 font-medium tracking-wide uppercase">Factory Pickup</span>
+            </div>
+            <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+              <span class="block text-3xl font-extrabold text-white">4.8/5</span>
+              <span class="text-xs text-white/60 font-medium tracking-wide uppercase">Client Rating</span>
+            </div>
+            <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+              <span class="block text-3xl font-extrabold text-white">Moisture</span>
+              <span class="text-xs text-white/60 font-medium tracking-wide uppercase">Free Containers</span>
+            </div>
+            <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+              <span class="block text-3xl font-extrabold text-cargo-red">100%</span>
+              <span class="text-xs text-white/60 font-medium tracking-wide uppercase">UT Tax Compliant</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Left Sidebar Layout (Flipped Symmetry) -->
-  <section class="py-16 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+  <!-- Content Showcase Section -->
+  <section class="py-20 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+    <!-- AI Search Optimization Answer Block (TL;DR) -->
+    <div class="bg-cargo-red/5 border border-cargo-red/10 rounded-2xl p-6 mb-12 flex gap-4 items-start shadow-sm">
+      <div class="w-12 h-12 bg-cargo-red/10 text-cargo-red rounded-xl flex items-center justify-center shrink-0">
+        <span class="material-symbols-outlined text-2xl font-bold">lightbulb</span>
+      </div>
+      <div class="space-y-2">
+        <span class="text-cargo-red font-bold text-xs uppercase tracking-widest block">TL;DR / Quick Answer</span>
+        <h2 class="text-base font-bold text-deep-onyx">Looking for the Best Logistics & Transport Company in Silvassa?</h2>
+        <p class="text-xs text-steel-gray leading-relaxed">
+          Supreme Express Cargo is Silvassa's leading transport provider since 2005. Serving Piparia, Masat, Kharadpada, and Khadoli GIDC, we specialize in moisture-proof closed containers for yarn shipping, high-capacity Taurus trucks for paper board rolls, and dedicated 3PL warehousing. Daily dispatches connect Silvassa directly to Delhi-NCR, Mumbai, and South India.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Introduction Section with visual border accent -->
+    <div class="relative bg-white p-8 md:p-12 rounded-3xl shadow-lg border border-slate-100 mb-16 overflow-hidden">
+      <!-- Top line border decoration -->
+      <div class="absolute top-0 left-0 right-0 h-1 bg-cargo-red"></div>
       
-      <!-- Sidebar on the LEFT (lg:col-span-4) -->
-      <div class="lg:col-span-4 lg:order-1 space-y-8">
-        <!-- Floating Info Panel -->
-        <div class="bg-deep-onyx text-white p-8 rounded-2xl shadow-xl border border-white/5 space-y-6 relative overflow-hidden">
-          <div class="text-lg font-bold border-b border-white/10 pb-4 flex items-center gap-2 text-white">
-            <span class="material-symbols-outlined text-cargo-red">location_on</span> Silvassa Terminal
-          </h3>
-          <ul class="space-y-4 text-xs">
-            <li class="flex flex-col gap-1 border-b border-white/5 pb-2">
-              <span class="text-white/60">Local Booking Hub</span>
-              <span class="font-semibold text-white/90">Plot No.1, Sai Aastha Society, Dungri Faliya, Vapi GIDC border (serving Silvassa)</span>
-            </li>
-            <li class="flex justify-between py-2 border-b border-white/5">
-              <span class="text-white/60">Phone Booking</span>
-              <a href="tel:8059557659" class="font-semibold text-cargo-red hover:underline">+91 8059557659</a>
-            </li>
-            <li class="flex justify-between py-2 border-b border-white/5">
-              <span class="text-white/60">Industries Covered</span>
-              <span class="font-semibold">Textile, Paper, Packaging</span>
-            </li>
-            <li class="flex justify-between py-2">
-              <span class="text-white/60">Transit Modes</span>
-              <span class="font-semibold text-cargo-red">FTL, PTL, Express</span>
-            </li>
-          </ul>
-          <a href="contact.html" class="block w-full bg-cargo-red hover:bg-red-700 text-white font-bold py-4 rounded-xl text-center transition-all shadow-lg">Get Silvassa Quote</a>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-4 space-y-3">
+          <span class="text-cargo-red font-bold text-xs uppercase tracking-widest">Industry Overview</span>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-deep-onyx">Textile & Paper Logistics Partners in Silvassa</h2>
+          <div class="h-1 w-16 bg-cargo-red mt-2"></div>
         </div>
-
-        <!-- Silvassa Estates Cards -->
-        <div class="bg-white p-8 rounded-2xl border border-slate-100 space-y-4 shadow-md">
-          <div class="text-lg font-bold text-deep-onyx border-b border-slate-100 pb-2">GIDC Estates We Serve</div>
-          <ul class="space-y-3 text-xs text-steel-gray">
-            <li class="flex items-center gap-3"><span class="w-2 h-2 bg-cargo-red rounded-full"></span> Piparia Industrial Estate</li>
-            <li class="flex items-center gap-3"><span class="w-2 h-2 bg-cargo-red rounded-full"></span> Masat Industrial Area</li>
-            <li class="flex items-center gap-3"><span class="w-2 h-2 bg-cargo-red rounded-full"></span> Kharadpada GIDC Zone</li>
-            <li class="flex items-center gap-3"><span class="w-2 h-2 bg-cargo-red rounded-full"></span> Khadoli & Sayli Estates</li>
-            <li class="flex items-center gap-3"><span class="w-2 h-2 bg-cargo-red rounded-full"></span> Amli & Rakholi Corridor</li>
-          </ul>
+        <div class="lg:col-span-8 text-steel-gray leading-relaxed text-sm md:text-base space-y-4">
+          <p>
+            Silvassa is a major manufacturing cluster in Dadra & Nagar Haveli. It is home to prominent textile yarn weaving mills, spinning units, and paper packaging factories. Transporting delicate yarn reels and heavy paper board rolls demands specialized weather-proof shipping and high-load fleets. Supreme Express Cargo is recognized as the <strong>best logistics company in Silvassa</strong>, offering a fully integrated freight network.
+          </p>
+          <p>
+            We manage daily commercial dispatches, FTL container lines, and PTL cargo consolidation. Our operations connect Silvassa with Delhi-NCR, Gujarat, Maharashtra, and South India. With real-time GPS tracking and localized customs expertise, we ensure your industrial goods arrive safely and on schedule.
+          </p>
         </div>
       </div>
+    </div>
 
-      <!-- Main Content on the RIGHT (lg:col-span-8, lg:order-2) -->
-      <div class="lg:col-span-8 lg:order-2 space-y-8">
-        <!-- AI Search Optimization Answer Block (TL;DR) -->
-        <div class="bg-cargo-red/5 border border-cargo-red/10 rounded-2xl p-6 flex gap-4 items-start shadow-sm">
-          <div class="w-12 h-12 bg-cargo-red/10 text-cargo-red rounded-xl flex items-center justify-center shrink-0">
-            <span class="material-symbols-outlined text-2xl font-bold">lightbulb</span>
+    <!-- Silvassa GIDC Cards -->
+    <div class="mb-20" id="estates">
+      <div class="text-center mb-12">
+        <span class="text-cargo-red font-bold uppercase tracking-widest text-xs">GIDC Coverage</span>
+        <h2 class="text-3xl font-extrabold text-deep-onyx mt-1">Silvassa Industrial Areas We Serve Daily</h2>
+        <p class="text-steel-gray text-sm mt-2">Direct factory gate collection and shipping from all Dadra & Nagar Haveli industrial hubs</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Piparia Card -->
+        <div class="group bg-white p-8 rounded-2xl border border-slate-100 hover:border-cargo-red transition-all duration-300 shadow-sm hover:shadow-lg relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-1 h-full bg-cargo-red"></div>
+          <div class="w-12 h-12 bg-cargo-red/10 text-cargo-red rounded-xl flex items-center justify-center mb-6">
+            <span class="material-symbols-outlined text-2xl font-bold">dashboard</span>
           </div>
-          <div class="space-y-2">
-            <span class="text-cargo-red font-bold text-xs uppercase tracking-widest block">TL;DR / Quick Answer</span>
-            <h2 class="text-base font-bold text-deep-onyx">Looking for the Best Logistics & Transport Company in Silvassa?</h2>
-            <p class="text-xs text-steel-gray leading-relaxed">
-              Supreme Express Cargo is Silvassa's top transport and logistics provider since 2005. Serving Piparia, Masat, Kharadpada, and Khadoli GIDC, we specialize in moisture-proof closed containers for textile yarn shipping, high-capacity Taurus trucks for paper packaging rolls, and dedicated 3PL industrial warehousing.
-            </p>
+          <h3 class="font-bold text-lg text-deep-onyx mb-2">Piparia GIDC</h3>
+          <p class="text-xs text-steel-gray leading-relaxed">Daily FTL container shipping and part-load dispatches for textiles, yarn spinning, and metal units.</p>
+        </div>
+        
+        <!-- Masat Card -->
+        <div class="group bg-white p-8 rounded-2xl border border-slate-100 hover:border-cargo-red transition-all duration-300 shadow-sm hover:shadow-lg relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-1 h-full bg-deep-onyx"></div>
+          <div class="w-12 h-12 bg-cargo-red/10 text-cargo-red rounded-xl flex items-center justify-center mb-6">
+            <span class="material-symbols-outlined text-2xl font-bold">domain</span>
+          </div>
+          <h3 class="font-bold text-lg text-deep-onyx mb-2">Masat Estate</h3>
+          <p class="text-xs text-steel-gray leading-relaxed">Dedicated logistics for packaging industries, Kraft paper reels, and heavy industrial products.</p>
+        </div>
+        
+        <!-- Kharadpada Card -->
+        <div class="group bg-white p-8 rounded-2xl border border-slate-100 hover:border-cargo-red transition-all duration-300 shadow-sm hover:shadow-lg relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-1 h-full bg-cargo-red"></div>
+          <div class="w-12 h-12 bg-cargo-red/10 text-cargo-red rounded-xl flex items-center justify-center mb-6">
+            <span class="material-symbols-outlined text-2xl font-bold">warehouse</span>
+          </div>
+          <h3 class="font-bold text-lg text-deep-onyx mb-2">Kharadpada GIDC</h3>
+          <p class="text-xs text-steel-gray leading-relaxed">Consolidated shipping, local transit hubs, and border transport checks for high-density polymer materials.</p>
+        </div>
+        
+        <!-- Khadoli Card -->
+        <div class="group bg-white p-8 rounded-2xl border border-slate-100 hover:border-cargo-red transition-all duration-300 shadow-sm hover:shadow-lg relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-1 h-full bg-deep-onyx"></div>
+          <div class="w-12 h-12 bg-cargo-red/10 text-cargo-red rounded-xl flex items-center justify-center mb-6">
+            <span class="material-symbols-outlined text-2xl font-bold">precision_manufacturing</span>
+          </div>
+          <h3 class="font-bold text-lg text-deep-onyx mb-2">Khadoli & Sayli</h3>
+          <p class="text-xs text-steel-gray leading-relaxed">Specialized electronics shipping, raw materials storage, and regular dispatches for consumer goods mills.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Silvassa Capabilities Dual Sections -->
+    <div class="text-center mb-12">
+      <span class="text-cargo-red font-bold uppercase tracking-widest text-xs">Capabilities</span>
+      <h2 class="text-3xl font-extrabold text-deep-onyx mt-1">Specialized Cargo Transit & Warehousing in Silvassa</h2>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
+      <!-- Card 1 (Dark Theme) -->
+      <div class="relative bg-deep-onyx text-white p-8 md:p-12 rounded-3xl overflow-hidden shadow-xl flex flex-col justify-between">
+        <div>
+          <span class="text-cargo-red font-bold text-xs uppercase tracking-widest block mb-2">Specialized Handling</span>
+          <h3 class="text-2xl md:text-3xl font-extrabold mb-4 font-display-lg">Silvassa Textile & Packaging Cargo</h3>
+          <p class="text-sm text-white/80 leading-relaxed mb-8">
+            Textile yarn and cotton cones require completely dry, closed container fleets to prevent moisture damage during transit. We operate a modern, double-tarped and weather-proof closed box container fleet specifically optimized for yarn reels. For paper and packaging mills, we offer heavy-duty Taurus trucks and open trailers to manage heavy reels safely.
+          </p>
+        </div>
+        <a href="contact.html" class="inline-block bg-cargo-red text-white text-center font-bold px-8 py-4 rounded-xl hover:scale-95 transition-transform max-w-xs shadow-lg">Request Silvassa Quote</a>
+      </div>
+
+      <!-- Card 2 (Light/Gray Theme) -->
+      <div class="relative bg-white p-8 md:p-12 rounded-3xl border border-slate-100 shadow-xl flex flex-col justify-between">
+        <div>
+          <span class="text-cargo-red font-bold text-xs uppercase tracking-widest block mb-2">Logistics Storage</span>
+          <h3 class="text-2xl md:text-3xl font-extrabold text-deep-onyx mb-4 font-display-lg">Silvassa 3PL Warehousing</h3>
+          <p class="text-sm text-steel-gray leading-relaxed mb-8">
+            We provide comprehensive warehousing and cross-docking services near the Vapi-Silvassa GIDC borders. As a leading <strong>warehousing company in Silvassa</strong>, we offer dust-free, secure storage for raw cotton yarn, printed boxes, and manufactured plastic goods. Our facilities include continuous CCTV monitoring and dock levelers.
+          </p>
+        </div>
+        <a href="contact.html" class="inline-block bg-deep-onyx text-white text-center font-bold px-8 py-4 rounded-xl hover:scale-95 transition-transform max-w-xs shadow-lg">Inquire Storage Space</a>
+      </div>
+    </div>
+
+    <!-- Silvassa Fleet Capacity Table -->
+    <div class="mb-20">
+      <div class="text-center mb-12">
+        <span class="text-cargo-red font-bold uppercase tracking-widest text-xs">Our Fleet</span>
+        <h2 class="text-3xl font-extrabold text-deep-onyx mt-1">Silvassa Fleet Capacity & Capabilities</h2>
+        <p class="text-steel-gray text-sm mt-2">GPS-active modern trucks available for instant loading in Piparia & Masat</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-md overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs border-collapse">
+            <thead>
+              <tr class="bg-slate-50 text-steel-gray font-bold border-b border-slate-100">
+                <th class="p-4">Vehicle Type</th>
+                <th class="p-4">Capacity (Tons)</th>
+                <th class="p-4">Best Suited Cargo</th>
+                <th class="p-4 text-center">Transit Mode</th>
+              </tr>
+            </thead>
+            <tbody class="text-steel-gray divide-y divide-slate-100">
+              <tr class="hover:bg-slate-50 transition-colors">
+                <td class="p-4 font-semibold text-deep-onyx flex items-center gap-2">
+                  <span class="material-symbols-outlined text-cargo-red text-sm">local_shipping</span> 19ft Container
+                </td>
+                <td class="p-4">7-9 Tons</td>
+                <td class="p-4">Polyester Yarn Reels, Cones, Textile Fabric</td>
+                <td class="p-4 text-center"><span class="bg-cargo-red/10 text-cargo-red px-2 py-0.5 rounded text-xxs font-bold">PTL / FTL</span></td>
+              </tr>
+              <tr class="hover:bg-slate-50 transition-colors">
+                <td class="p-4 font-semibold text-deep-onyx flex items-center gap-2">
+                  <span class="material-symbols-outlined text-cargo-red text-sm">local_shipping</span> 32ft Container MX
+                </td>
+                <td class="p-4">15-20 Tons</td>
+                <td class="p-4">Fabric Rolls, Printed Cartons, Garments</td>
+                <td class="p-4 text-center"><span class="bg-cargo-red/10 text-cargo-red px-2 py-0.5 rounded text-xxs font-bold">Direct FTL</span></td>
+              </tr>
+              <tr class="hover:bg-slate-50 transition-colors">
+                <td class="p-4 font-semibold text-deep-onyx flex items-center gap-2">
+                  <span class="material-symbols-outlined text-cargo-red text-sm">local_shipping</span> Taurus 10-Wheel
+                </td>
+                <td class="p-4">16-21 Tons</td>
+                <td class="p-4">Kraft Paper Reels, Polymer Bags, Engineering Parts</td>
+                <td class="p-4 text-center"><span class="bg-cargo-red text-white px-2 py-0.5 rounded text-xxs font-bold">Bulk Freight</span></td>
+              </tr>
+              <tr class="hover:bg-slate-50 transition-colors">
+                <td class="p-4 font-semibold text-deep-onyx flex items-center gap-2">
+                  <span class="material-symbols-outlined text-cargo-red text-sm">local_shipping</span> Open Platform Trailer
+                </td>
+                <td class="p-4">25-35 Tons</td>
+                <td class="p-4">Heavy Machinery, Boilers, Steel Pipes</td>
+                <td class="p-4 text-center"><span class="bg-deep-onyx text-white px-2 py-0.5 rounded text-xxs font-bold">Heavy ODC</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Expanded Competitor-Beat Content Section (80+ Bullets and 10 Lists) -->
+    <div class="space-y-8 pt-6 p-8 bg-surface-container rounded-xl border border-outline-variant mb-20">
+      <div>
+        <h3 class="font-display-lg text-headline-md font-bold text-deep-onyx">Complete Logistics Services in Silvassa GIDC</h3>
+        <div class="h-0.5 w-16 bg-cargo-red mb-4"></div>
+        <p class="text-steel-gray leading-relaxed text-sm">
+          We are the best logistics company in Silvassa. We serve local GIDC plants daily. Our team handles raw materials and finished goods. Here is our full service list:
+        </p>
+        <ul class="list-disc pl-6 mt-2 space-y-1 text-steel-gray text-xs">
+          <li><strong>Full Truck Load (FTL) Transport:</strong> Dedicated trucks for large GIDC textile and paper factory orders.</li>
+          <li><strong>Part Truck Load (PTL) Cargo:</strong> Consolidated small cargo shipments to save transit costs.</li>
+          <li><strong>Industrial Warehousing:</strong> Clean, dry, and moisture-controlled warehouse storage near the border.</li>
+          <li><strong>3PL Supply Chain:</strong> Total logistics handling from stock management to final delivery.</li>
+          <li><strong>Express Cargo Shipping:</strong> Urgent delivery service with fixed transit schedules.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display-lg text-headline-md font-bold text-deep-onyx">GIDC Industrial Areas We Serve</h3>
+        <div class="h-0.5 w-16 bg-cargo-red mb-4"></div>
+        <p class="text-steel-gray leading-relaxed text-sm">
+          Our fleet picks up cargo directly from all sectors. We cover every industrial zone in Silvassa:
+        </p>
+        <ul class="list-disc pl-6 mt-2 space-y-1 text-steel-gray text-xs">
+          <li><strong>Piparia Industrial Estate:</strong> Textile weaving mills and heavy engineering workshops.</li>
+          <li><strong>Masat Industrial Area:</strong> Paper packaging, plastic boxes, and roll factories.</li>
+          <li><strong>Kharadpada GIDC Zone:</strong> Polymer processing plants and dye manufacturing units.</li>
+          <li><strong>Khadoli & Sayli Estates:</strong> Electronics assembly, texturizing mills, and steel units.</li>
+          <li><strong>Amli & Rakholi Corridor:</strong> Packaging manufacturers and chemical plants.</li>
+          <li><strong>Dadra GIDC Belts:</strong> Fast pickups near the Gujarat border.</li>
+          <li><strong>Silli Industrial Clusters:</strong> Small and medium enterprise manufacturing sectors.</li>
+          <li><strong>Union Territory Checkpoints:</strong> Fast tax compliance processing at checkposts.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display-lg text-headline-md font-bold text-deep-onyx">National Routes & Transit Times from Silvassa</h3>
+        <div class="h-0.5 w-16 bg-cargo-red mb-4"></div>
+        <p class="text-steel-gray leading-relaxed text-sm">
+          We run daily direct trucks on long routes. Here are our standard transit times:
+        </p>
+        <ul class="list-disc pl-6 mt-2 space-y-1 text-steel-gray text-xs">
+          <li><strong>Silvassa to Delhi-NCR:</strong> Daily express dispatches reaching in 48-60 hours.</li>
+          <li><strong>Silvassa to Bangalore:</strong> Direct South-bound container lines in 48 hours.</li>
+          <li><strong>Silvassa to Chennai:</strong> Specialized textile yarn cargo transport in 72 hours.</li>
+          <li><strong>Silvassa to Hyderabad:</strong> Fast industrial cargo transit in 55 hours.</li>
+          <li><strong>Silvassa to Mumbai/JNPT:</strong> Export container haulage in 12 hours.</li>
+          <li><strong>Silvassa to Pune GIDC:</strong> Express industrial parts dispatch in 18 hours.</li>
+          <li><strong>Silvassa to Ahmedabad:</strong> North Gujarat route coverage in 15 hours.</li>
+          <li><strong>Silvassa to Kolkata:</strong> East India cargo delivery in 120 hours.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display-lg text-headline-md font-bold text-deep-onyx">Our Modern Fleet & Truck Capacity</h3>
+        <div class="h-0.5 w-16 bg-cargo-red mb-4"></div>
+        <p class="text-steel-gray leading-relaxed text-sm">
+          We have a large fleet of attached and own vehicles. Choose the best truck for your cargo:
+        </p>
+        <ul class="list-disc pl-6 mt-2 space-y-1 text-steel-gray text-xs">
+          <li><strong>14-Feet Open Body:</strong> Best for local factory movements (3-4 Tons).</li>
+          <li><strong>17-Feet Closed Container:</strong> Keeps electronics and sensitive cargo dry (5-7 Tons).</li>
+          <li><strong>19-Feet Closed Container:</strong> Secure box truck for commercial yarn and packages (7-9 Tons).</li>
+          <li><strong>22-Feet Multi-Axle:</strong> Heavy cargo truck for metals and paper (10-12 Tons).</li>
+          <li><strong>32-Feet Single Axle MX:</strong> Large volume container for light items (15 Tons).</li>
+          <li><strong>32-Feet Multi-Axle MX:</strong> Heavy-duty shipping container truck (20-25 Tons).</li>
+          <li><strong>Low-Bed Trailers:</strong> Best for oversized machinery and boilers.</li>
+          <li><strong>Taurus Trucks (10-Wheel):</strong> Standard long-haul freight carrier (15-21 Tons).</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display-lg text-headline-md font-bold text-deep-onyx">Key Industry Sectors We Serve in Silvassa</h3>
+        <div class="h-0.5 w-16 bg-cargo-red mb-4"></div>
+        <p class="text-steel-gray leading-relaxed text-sm">
+          Our drivers are trained to handle different industrial goods. We serve these main sectors:
+        </p>
+        <ul class="list-disc pl-6 mt-2 space-y-1 text-steel-gray text-xs">
+          <li><strong>Textiles & Yarn:</strong> Dust-free closed containers to protect yarn rolls and cotton.</li>
+          <li><strong>Paper & Packaging:</strong> Clean, dry container trucks to prevent moisture damage to paper rolls.</li>
+          <li><strong>Plastics & Polymers:</strong> Heavy bulk bag shipments and direct factory storage.</li>
+          <li><strong>Pharmaceuticals:</strong> Clean cargo handling for medical packaging and raw materials.</li>
+          <li><strong>Metals & Engineering:</strong> Reinforced flatbeds for steel coils and machinery.</li>
+          <li><strong>Electrical Goods:</strong> Shock-insulated containers for sensitive components.</li>
+          <li><strong>Fast-Moving Consumer Goods:</strong> Consolidated PTL services to national distributors.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display-lg text-headline-md font-bold text-deep-onyx">Required Cargo Transit Documents We Handle</h3>
+        <div class="h-0.5 w-16 bg-cargo-red mb-4"></div>
+        <p class="text-steel-gray leading-relaxed text-sm">
+          We help you remain compliant with state tax laws. Our team checks all documents:
+        </p>
+        <ul class="list-disc pl-6 mt-2 space-y-1 text-steel-gray text-xs">
+          <li><strong>E-way Bill:</strong> Fast digital checks to prevent checkpost delays.</li>
+          <li><strong>GST Invoice:</strong> Correct taxable documentation matching carriage rules.</li>
+          <li><strong>Lorry Receipt (LR/GR):</strong> Legal proof of consignment with clear terms.</li>
+          <li><strong>Transit Insurance:</strong> Safety cover for high-value machinery.</li>
+          <li><strong>Delivery Challan:</strong> Signed receipt on unloading to confirm delivery.</li>
+          <li><strong>Octroi/NOC Clearances:</strong> Handling all Union Territory checkpost entry forms.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display-lg text-headline-md font-bold text-deep-onyx">3PL Warehousing Facilities Features</h3>
+        <div class="h-0.5 w-16 bg-cargo-red mb-4"></div>
+        <p class="text-steel-gray leading-relaxed text-sm">
+          Store your inventory near the manufacturing hubs. Our warehouse offers:
+        </p>
+        <ul class="list-disc pl-6 mt-2 space-y-1 text-steel-gray text-xs">
+          <li><strong>CCTV Monitoring:</strong> Continuous camera recording inside and outside.</li>
+          <li><strong>Racking Systems:</strong> High-density pallet racking to keep goods organized.</li>
+          <li><strong>Dock Levelers:</strong> Safe, fast container loading and unloading bays.</li>
+          <li><strong>Inventory Tracking:</strong> Daily stock reports and batch code management.</li>
+          <li><strong>Moisture Control:</strong> Dry floor setups to protect paper and textile stock.</li>
+          <li><strong>Pest Control:</strong> Regularly treated zones to prevent damage.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display-lg text-headline-md font-bold text-deep-onyx">Safety Protocols for Cargo Handling</h3>
+        <div class="h-0.5 w-16 bg-cargo-red mb-4"></div>
+        <p class="text-steel-gray leading-relaxed text-sm">
+          We prioritize cargo security on all routes. Our main safety rules are:
+        </p>
+        <ul class="list-disc pl-6 mt-2 space-y-1 text-steel-gray text-xs">
+          <li><strong>Lashing and Tarping:</strong> Secure cargo strapping to prevent movement.</li>
+          <li><strong>GPS Tracking:</strong> Real-time location checks and route breach alerts.</li>
+          <li><strong>Driver Verification:</strong> Complete background and license checks.</li>
+          <li><strong>Regular Fleet Servicing:</strong> Monthly mechanical checks on all long-route trucks.</li>
+          <li><strong>Safe Loading Limits:</strong> Strict weight checks to prevent vehicle accidents.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display-lg text-headline-md font-bold text-deep-onyx">Dadra & Nagar Haveli Regional Hubs We Cover</h3>
+        <div class="h-0.5 w-16 bg-cargo-red mb-4"></div>
+        <p class="text-steel-gray leading-relaxed text-sm">
+          We pick up cargo across the entire industrial belt. Our service towns include:
+        </p>
+        <ul class="list-disc pl-6 mt-2 space-y-1 text-steel-gray text-xs">
+          <li><strong>Silvassa GIDC Piparia:</strong> The primary textile manufacturing hub.</li>
+          <li><strong>Masat Industrial Town:</strong> Major paper roll and packaging cluster.</li>
+          <li><strong>Kharadpada Zone:</strong> Polymer processing plants.</li>
+          <li><strong>Khadoli:</strong> Electronics manufacturing and spinning mills.</li>
+          <li><strong>Sayli & Naroli:</strong> Yarn texturizing and plastic processing centers.</li>
+          <li><strong>Rakholi:</strong> Packaging units and heavy chemical processing.</li>
+          <li><strong>Dadra:</strong> Industrial sector bordering Vapi, Gujarat.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display-lg text-headline-md font-bold text-deep-onyx">Core Service Offerings Breakdown</h3>
+        <div class="h-0.5 w-16 bg-cargo-red mb-4"></div>
+        <p class="text-steel-gray leading-relaxed text-sm">
+          We customize our logistics to fit your supply chain. We offer:
+        </p>
+        <ul class="list-disc pl-6 mt-2 space-y-1 text-steel-gray text-xs">
+          <li><strong>Point-to-Point Trucking:</strong> Direct FTL deliveries from Silvassa factories to national buyers.</li>
+          <li><strong>Consolidated Part Loads:</strong> Grouping smaller packages to save up to 40% on transport.</li>
+          <li><strong>Cross-Docking Services:</strong> Quick sorting and reloading at our border hub.</li>
+          <li><strong>Temporary Storage:</strong> Short-term warehouse space during high shipping seasons.</li>
+          <li><strong>Reverse Logistics:</strong> Safe return of empty pallets and packaging reels.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Why Leading Brands Trust Us Section -->
+    <section class="py-12 bg-deep-onyx text-white overflow-hidden rounded-3xl mb-20" id="why-us">
+      <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+        <div class="lg:col-span-5 space-y-6 relative z-10 p-4">
+          <span class="text-cargo-red font-bold uppercase tracking-widest text-xs">The Supreme Advantage</span>
+          <h2 class="font-display-lg text-headline-lg font-extrabold">Why Leading Brands Trust Us</h2>
+          <div class="space-y-6 pt-4">
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                <span class="material-symbols-outlined text-cargo-red">verified_user</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg">Safe &amp; Secure</h4>
+                <p class="text-slate-400 text-sm">Every shipment is handled with the highest level of security, featuring real-time GPS tracking and 24/7 monitoring.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                <span class="material-symbols-outlined text-cargo-red">speed</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg">Express Turnaround</h4>
+                <p class="text-slate-400 text-sm">Optimized routing algorithms ensure the fastest door-to-door transit times.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                <span class="material-symbols-outlined text-cargo-red">support_agent</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg">Personalized Support</h4>
+                <p class="text-slate-400 text-sm">Dedicated account managers for B2B clients and 24/7 helpdesk for all.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-7 relative p-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-4 pt-12">
+              <div class="bg-white/5 rounded-xl p-4 border border-white/10 shadow-lg hover:-translate-y-1 transition-transform">
+                <img decoding="async" loading="lazy" width="400" height="160" alt="Real-time technology logistics tracking screen on a mobile phone showing transit route" class="w-full h-40 object-cover rounded-lg mb-4" src="images/realtime-tracking.jpg">
+                <span class="font-label-mono text-xs text-cargo-red uppercase">Real-time Tech</span>
+              </div>
+              <div class="bg-white/5 rounded-xl p-4 border border-white/10 shadow-lg hover:-translate-y-1 transition-transform">
+                <div class="text-3xl font-extrabold text-white mb-2">99.8%</div>
+                <p class="text-slate-400 text-xs">On-time delivery rate across national networks.</p>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div class="bg-white/5 rounded-xl p-4 border border-white/10 shadow-lg hover:-translate-y-1 transition-transform">
+                <div class="text-3xl font-extrabold text-white mb-2">100+</div>
+                <p class="text-slate-400 text-xs">Dedicated attached modern fleet vehicles on the road.</p>
+              </div>
+              <div class="bg-white/5 rounded-xl p-4 border border-white/10 shadow-lg hover:-translate-y-1 transition-transform">
+                <img decoding="async" loading="lazy" width="400" height="192" alt="Secure warehousing facility with neatly organized cargo and high-density shelving" class="w-full h-48 object-cover rounded-lg mb-4" src="images/secure-warehousing.jpg">
+                <span class="font-label-mono text-xs text-cargo-red uppercase">Secure Warehousing</span>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -right-20 top-0 w-64 h-64 bg-cargo-red/10 blur-[100px] rounded-full"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-12 bg-white rounded-3xl border border-slate-100 shadow-sm mb-20" id="testimonials">
+      <div class="text-center mb-12">
+        <span class="text-cargo-red font-bold uppercase tracking-widest text-xs">Client Feedback</span>
+        <h2 class="font-display-lg text-headline-lg font-extrabold text-deep-onyx mt-1">What Our Clients Say</h2>
+        <div class="w-24 h-1.5 bg-cargo-red mx-auto mt-2"></div>
+        <p class="max-w-2xl mx-auto text-steel-gray text-sm mt-3">Trusted by over 1,500 corporate partners nationwide.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter px-4 md:px-8">
+        <div class="bg-slate-50 p-8 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-lg transition-shadow">
+          <div>
+            <span class="material-symbols-outlined text-cargo-red text-4xl mb-4">format_quote</span>
+            <p class="text-steel-gray font-body-md italic mb-6">"Reliable textile yarn shipping. Moisture-free container trucks from Silvassa Masat GIDC to Delhi NCR. They handle border checks very quickly."</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-deep-onyx font-headline-md text-base">Rajesh Nair</h4>
+            <p class="text-cargo-red text-xs font-label-mono uppercase">Yarn Spinning Mills</p>
+          </div>
+        </div>
+        <div class="bg-slate-50 p-8 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-lg transition-shadow">
+          <div>
+            <span class="material-symbols-outlined text-cargo-red text-4xl mb-4">format_quote</span>
+            <p class="text-steel-gray font-body-md italic mb-6">"Excellent paper packaging freight transport from Silvassa GIDC to North India states. Highly recommend their Taurus multi-axle trucks."</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-deep-onyx font-headline-md text-base">Anil Gupta</h4>
+            <p class="text-cargo-red text-xs font-label-mono uppercase">Paper & Pulp Packaging Co.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted Clients Logo Slider -->
+    <section class="py-12 bg-white border-t border-b border-slate-100 overflow-hidden relative mb-20 rounded-3xl">
+      <div class="mb-8 text-center">
+        <span class="text-cargo-red font-bold uppercase tracking-widest text-xs">Our Clients</span>
+        <h2 class="font-headline-md text-headline-md text-deep-onyx mt-1">Trusted Partner of Leading Businesses</h2>
+      </div>
+      
+      <!-- Logo Slider Container -->
+      <div class="relative w-full overflow-hidden flex items-center">
+        <!-- Left Gradient Shadow -->
+        <div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+        
+        <!-- Slider Track (running CSS animation) -->
+        <div class="flex animate-marquee gap-8 py-2">
+          <!-- Set 1 -->
+          <div class="flex items-center gap-8 pr-8 shrink-0">
+            <!-- Godrej Agrovet -->
+            <div class="flex items-center gap-4 bg-white border border-slate-100 rounded-xl px-5 py-3 min-w-[260px] shadow-sm hover:border-cargo-red/50 transition-all duration-300 hover:scale-105 hover:shadow-md">
+              <div class="w-16 h-10 flex-shrink-0 flex items-center justify-center bg-slate-50 border border-slate-100 rounded p-1">
+                <img decoding="async" loading="lazy" width="64" height="40" src="images/clients/godrej-agrovet.webp" alt="Godrej Agrovet" class="max-h-full max-w-full object-contain">
+              </div>
+              <span class="font-display-lg text-xs font-bold uppercase tracking-wider text-deep-onyx">Godrej Agrovet</span>
+            </div>
+            <!-- IFFCO Kisan -->
+            <div class="flex items-center gap-4 bg-white border border-slate-100 rounded-xl px-5 py-3 min-w-[260px] shadow-sm hover:border-cargo-red/50 transition-all duration-300 hover:scale-105 hover:shadow-md">
+              <div class="w-16 h-10 flex-shrink-0 flex items-center justify-center bg-slate-50 border border-slate-100 rounded p-1">
+                <img decoding="async" loading="lazy" width="64" height="40" src="images/clients/iffco-kisan.webp" alt="IFFCO Kisan" class="max-h-full max-w-full object-contain">
+              </div>
+              <span class="font-display-lg text-xs font-bold uppercase tracking-wider text-deep-onyx">IFFCO Kisan</span>
+            </div>
+            <!-- RSPL -->
+            <div class="flex items-center gap-4 bg-white border border-slate-100 rounded-xl px-5 py-3 min-w-[260px] shadow-sm hover:border-cargo-red/50 transition-all duration-300 hover:scale-105 hover:shadow-md">
+              <div class="w-16 h-10 flex-shrink-0 flex items-center justify-center bg-slate-50 border border-slate-100 rounded p-1">
+                <img decoding="async" loading="lazy" width="64" height="40" src="images/clients/rspl.webp" alt="RSPL" class="max-h-full max-w-full object-contain">
+              </div>
+              <span class="font-display-lg text-xs font-bold uppercase tracking-wider text-deep-onyx">RSPL</span>
+            </div>
+            <!-- RV Solutions -->
+            <div class="flex items-center gap-4 bg-white border border-slate-100 rounded-xl px-5 py-3 min-w-[260px] shadow-sm hover:border-cargo-red/50 transition-all duration-300 hover:scale-105 hover:shadow-md">
+              <div class="w-16 h-10 flex-shrink-0 flex items-center justify-center bg-slate-50 border border-slate-100 rounded p-1">
+                <img decoding="async" loading="lazy" width="64" height="40" src="images/clients/rv-solutions.webp" alt="RV Solutions" class="max-h-full max-w-full object-contain">
+              </div>
+              <span class="font-display-lg text-xs font-bold uppercase tracking-wider text-deep-onyx">RV Solutions</span>
+            </div>
+            <!-- Safety Projects -->
+            <div class="flex items-center gap-4 bg-white border border-slate-100 rounded-xl px-5 py-3 min-w-[260px] shadow-sm hover:border-cargo-red/50 transition-all duration-300 hover:scale-105 hover:shadow-md">
+              <div class="w-16 h-10 flex-shrink-0 flex items-center justify-center bg-slate-50 border border-slate-100 rounded p-1">
+                <img decoding="async" loading="lazy" width="64" height="40" src="images/clients/safety-projects.webp" alt="Safety Projects" class="max-h-full max-w-full object-contain">
+              </div>
+              <span class="font-display-lg text-xs font-bold uppercase tracking-wider text-deep-onyx">Safety Projects</span>
+            </div>
+          </div>
+          
+          <!-- Set 2 -->
+          <div class="flex items-center gap-8 pr-8 shrink-0">
+            <!-- Godrej Agrovet -->
+            <div class="flex items-center gap-4 bg-white border border-slate-100 rounded-xl px-5 py-3 min-w-[260px] shadow-sm hover:border-cargo-red/50 transition-all duration-300 hover:scale-105 hover:shadow-md">
+              <div class="w-16 h-10 flex-shrink-0 flex items-center justify-center bg-slate-50 border border-slate-100 rounded p-1">
+                <img decoding="async" loading="lazy" width="64" height="40" src="images/clients/godrej-agrovet.webp" alt="Godrej Agrovet" class="max-h-full max-w-full object-contain">
+              </div>
+              <span class="font-display-lg text-xs font-bold uppercase tracking-wider text-deep-onyx">Godrej Agrovet</span>
+            </div>
+            <!-- IFFCO Kisan -->
+            <div class="flex items-center gap-4 bg-white border border-slate-100 rounded-xl px-5 py-3 min-w-[260px] shadow-sm hover:border-cargo-red/50 transition-all duration-300 hover:scale-105 hover:shadow-md">
+              <div class="w-16 h-10 flex-shrink-0 flex items-center justify-center bg-slate-50 border border-slate-100 rounded p-1">
+                <img decoding="async" loading="lazy" width="64" height="40" src="images/clients/iffco-kisan.webp" alt="IFFCO Kisan" class="max-h-full max-w-full object-contain">
+              </div>
+              <span class="font-display-lg text-xs font-bold uppercase tracking-wider text-deep-onyx">IFFCO Kisan</span>
+            </div>
+            <!-- RSPL -->
+            <div class="flex items-center gap-4 bg-white border border-slate-100 rounded-xl px-5 py-3 min-w-[260px] shadow-sm hover:border-cargo-red/50 transition-all duration-300 hover:scale-105 hover:shadow-md">
+              <div class="w-16 h-10 flex-shrink-0 flex items-center justify-center bg-slate-50 border border-slate-100 rounded p-1">
+                <img decoding="async" loading="lazy" width="64" height="40" src="images/clients/rspl.webp" alt="RSPL" class="max-h-full max-w-full object-contain">
+              </div>
+              <span class="font-display-lg text-xs font-bold uppercase tracking-wider text-deep-onyx">RSPL</span>
+            </div>
+            <!-- RV Solutions -->
+            <div class="flex items-center gap-4 bg-white border border-slate-100 rounded-xl px-5 py-3 min-w-[260px] shadow-sm hover:border-cargo-red/50 transition-all duration-300 hover:scale-105 hover:shadow-md">
+              <div class="w-16 h-10 flex-shrink-0 flex items-center justify-center bg-slate-50 border border-slate-100 rounded p-1">
+                <img decoding="async" loading="lazy" width="64" height="40" src="images/clients/rv-solutions.webp" alt="RV Solutions" class="max-h-full max-w-full object-contain">
+              </div>
+              <span class="font-display-lg text-xs font-bold uppercase tracking-wider text-deep-onyx">RV Solutions</span>
+            </div>
+            <!-- Safety Projects -->
+            <div class="flex items-center gap-4 bg-white border border-slate-100 rounded-xl px-5 py-3 min-w-[260px] shadow-sm hover:border-cargo-red/50 transition-all duration-300 hover:scale-105 hover:shadow-md">
+              <div class="w-16 h-10 flex-shrink-0 flex items-center justify-center bg-slate-50 border border-slate-100 rounded p-1">
+                <img decoding="async" loading="lazy" width="64" height="40" src="images/clients/safety-projects.webp" alt="Safety Projects" class="max-h-full max-w-full object-contain">
+              </div>
+              <span class="font-display-lg text-xs font-bold uppercase tracking-wider text-deep-onyx">Safety Projects</span>
+            </div>
           </div>
         </div>
         
-        <!-- Text intro block -->
-        <div class="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-md space-y-4">
-          <h2 class="text-2xl md:text-3xl font-extrabold text-deep-onyx">Textile & Paper Logistics Partners in Silvassa</h2>
-          <div class="h-1.5 w-16 bg-cargo-red"></div>
-          <p class="text-steel-gray leading-relaxed text-sm md:text-base">
-            Silvassa is a primary industrial zone in Dadra & Nagar Haveli. It is home to major textile weaving mills, yarn spinning units, and paper packaging factories. Moving large rolls of paper and yarn requires heavy-duty multi-axle trucks and moisture-proof storage. Supreme Express Cargo is the <strong>best logistics company in Silvassa</strong>. We handle bulk dispatches for leading industries daily.
+        <!-- Right Gradient Shadow -->
+        <div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+      </div>
+    </section>
+
+    <!-- Silvassa FAQs Section -->
+    <div class="bg-white p-8 md:p-12 rounded-3xl border border-slate-100 max-w-3xl mx-auto shadow-lg relative overflow-hidden">
+      <div class="absolute top-0 left-0 right-0 h-1 bg-cargo-red"></div>
+      <h3 class="text-2xl font-extrabold text-deep-onyx text-center mb-2">Frequently Asked Questions</h3>
+      <p class="text-xs text-slate-400 text-center mb-8">Quick answers regarding Silvassa cargo clearances & transit schedules.</p>
+      <div class="space-y-4">
+        <details class="group p-5 bg-slate-50 rounded-xl open:shadow-md transition-all duration-300">
+          <summary class="font-semibold text-deep-onyx cursor-pointer list-none flex justify-between items-center">
+            <span>Do you provide direct transport services in Silvassa and Daman?</span>
+            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-cargo-red">expand_more</span>
+          </summary>
+          <p class="text-steel-gray text-sm mt-3 leading-relaxed border-t border-slate-200 pt-3">
+            Yes, we run daily pickup and delivery operations serving all key industrial areas in Silvassa (e.g. Piparia, Masat, Kharadpada, Khadoli, Sayli, Amli) and Daman (e.g. Dabhel, Ringanwada, Somnath).
           </p>
-          <p class="text-steel-gray leading-relaxed text-sm md:text-base">
-            We offer FTL trucking and consolidated part loads from Silvassa GIDC. Our direct routes connect Silvassa with Delhi-NCR, Mumbai, and South India. Our localized network ensures safe handling of yarn and paper rolls.
+        </details>
+        <details class="group p-5 bg-slate-50 rounded-xl open:shadow-md transition-all duration-300">
+          <summary class="font-semibold text-deep-onyx cursor-pointer list-none flex justify-between items-center">
+            <span>What type of fleets do you operate for Silvassa logistics?</span>
+            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-cargo-red">expand_more</span>
+          </summary>
+          <p class="text-steel-gray text-sm mt-3 leading-relaxed border-t border-slate-200 pt-3">
+            We operate a wide range of logistics fleets, including closed body containers for safe electronics/textiles, open platforms for industrial equipment, and small trucks for quick local deliveries.
           </p>
-        </div>
-
-        <!-- Textile Sizing Info Block -->
-        <div class="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-md space-y-4">
-          <h3 class="text-xl font-bold text-deep-onyx">Silvassa Textile Yarn & Packaging Cargo</h3>
-          <p class="text-steel-gray leading-relaxed text-sm">
-            Textile yarn requires completely dry, closed container trucks to prevent moisture damage. We operate a modern fleet of containerized vehicles. For packaging industries, we offer flatbed trailers and Taurus trucks to handle heavy cargo loads.
+        </details>
+        <details class="group p-5 bg-slate-50 rounded-xl open:shadow-md transition-all duration-300">
+          <summary class="font-semibold text-deep-onyx cursor-pointer list-none flex justify-between items-center">
+            <span>How do you coordinate with Vapi branch for Silvassa cargo?</span>
+            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-cargo-red">expand_more</span>
+          </summary>
+          <p class="text-steel-gray text-sm mt-3 leading-relaxed border-t border-slate-200 pt-3">
+            Our primary Vapi branch is located just a short distance from the Silvassa border, enabling us to handle rapid cross-docking, consolidation, and long-route dispatches within hours.
           </p>
-        </div>
-
-        <!-- Fleet Table -->
-        <h2 class="text-2xl font-extrabold text-deep-onyx mt-6 mb-4">Silvassa Fleet Capacity & Capabilities</h2><div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-md overflow-hidden">
-          <div class="flex items-center justify-between mb-4 border-b border-slate-100 pb-3">
-            <h3 class="font-bold text-deep-onyx text-sm">Silvassa Textile Fleet Capacities</h3>
-            <span class="text-xs text-cargo-red font-semibold">GPS Active</span>
-          </div>
-          <div class="overflow-x-auto">
-            <table class="w-full text-left text-xs border-collapse">
-              <thead>
-                <tr class="bg-slate-50 text-steel-gray font-bold border-b border-slate-100">
-                  <th class="p-4">Vehicle Type</th>
-                  <th class="p-4">Capacity (Tons)</th>
-                  <th class="p-4">Best Suited Cargo</th>
-                  <th class="p-4 text-center">Transit Mode</th>
-                </tr>
-              </thead>
-              <tbody class="text-steel-gray divide-y divide-slate-100">
-                <tr class="hover:bg-slate-50 transition-colors">
-                  <td class="p-4 font-semibold text-deep-onyx flex items-center gap-2">
-                    <span class="material-symbols-outlined text-cargo-red text-sm">local_shipping</span> 19ft Container
-                  </td>
-                  <td class="p-4">7-9 Tons</td>
-                  <td class="p-4">Polyester Yarn Reels & Cones</td>
-                  <td class="p-4 text-center"><span class="bg-cargo-red/10 text-cargo-red px-2 py-0.5 rounded text-xxs font-bold">PTL / FTL</span></td>
-                </tr>
-                <tr class="hover:bg-slate-50 transition-colors">
-                  <td class="p-4 font-semibold text-deep-onyx flex items-center gap-2">
-                    <span class="material-symbols-outlined text-cargo-red text-sm">local_shipping</span> 32ft Container MX
-                  </td>
-                  <td class="p-4">15-20 Tons</td>
-                  <td class="p-4">Fabric Rolls & Garments</td>
-                  <td class="p-4 text-center"><span class="bg-cargo-red/10 text-cargo-red px-2 py-0.5 rounded text-xxs font-bold">Direct FTL</span></td>
-                </tr>
-                <tr class="hover:bg-slate-50 transition-colors">
-                  <td class="p-4 font-semibold text-deep-onyx flex items-center gap-2">
-                    <span class="material-symbols-outlined text-cargo-red text-sm">local_shipping</span> Taurus 10-Wheel
-                  </td>
-                  <td class="p-4">16-21 Tons</td>
-                  <td class="p-4">Kraft Paper Reels & Board</td>
-                  <td class="p-4 text-center"><span class="bg-cargo-red text-white px-2 py-0.5 rounded text-xxs font-bold">Bulk Freight</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Capability Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-md flex gap-4 items-start">
-            <div class="w-12 h-12 bg-cargo-red/10 text-cargo-red rounded-xl flex items-center justify-center shrink-0">
-              <span class="material-symbols-outlined text-2xl font-bold">dry_cleaning</span>
-            </div>
-            <div>
-              <h3 class="font-bold text-deep-onyx mb-1 text-sm">Textile & Yarn Care</h3>
-              <p class="text-xs text-steel-gray leading-relaxed">Moisture-proof containerized loading for delicate fabric and cotton yarn rolls.</p>
-            </div>
-          </div>
-          <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-md flex gap-4 items-start">
-            <div class="w-12 h-12 bg-cargo-red/10 text-cargo-red rounded-xl flex items-center justify-center shrink-0">
-              <span class="material-symbols-outlined text-2xl font-bold">inventory</span>
-            </div>
-            <div>
-              <h3 class="font-bold text-deep-onyx mb-1 text-sm">Paper Board Transit</h3>
-              <p class="text-xs text-steel-gray leading-relaxed">High-capacity Taurus and multi-axle trucks to carry heavy packaging raw materials.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ accordion -->
-        <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-md">
-          <h3 class="text-xl font-extrabold text-deep-onyx border-b border-slate-100 pb-3 mb-6">Frequently Asked Questions</h3>
-          <div class="space-y-4">
-            <details class="group p-4 bg-slate-50 rounded-xl open:shadow-md transition-all duration-300">
-              <summary class="font-semibold text-deep-onyx cursor-pointer list-none flex justify-between items-center">
-                <span>Do you serve all industrial zones in Silvassa?</span>
-                <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-cargo-red">expand_more</span>
-              </summary>
-              <p class="text-steel-gray text-sm mt-3 leading-relaxed border-t border-slate-200 pt-3">
-                Yes, we cover all major industrial areas in Silvassa, including Piparia, Masat, Kharadpada, Sayli, Amli, and Khadoli GIDC.
-              </p>
-            </details>
-            <details class="group p-4 bg-slate-50 rounded-xl open:shadow-md transition-all duration-300">
-              <summary class="font-semibold text-deep-onyx cursor-pointer list-none flex justify-between items-center">
-                <span>Can you handle bulk yarn transport to other states?</span>
-                <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-cargo-red">expand_more</span>
-              </summary>
-              <p class="text-steel-gray text-sm mt-3 leading-relaxed border-t border-slate-200 pt-3">
-                Yes, we run daily direct FTL container trucks from Silvassa GIDC to major textile hubs like Panipat, Delhi-NCR, Coimbatore, and Surat.
-              </p>
-            </details>
-          </div>
-        </div>
-
+        </details>
+        <details class="group p-5 bg-slate-50 rounded-xl open:shadow-md transition-all duration-300">
+          <summary class="font-semibold text-deep-onyx cursor-pointer list-none flex justify-between items-center">
+            <span>Do you handle tax paperwork for Dadra & Nagar Haveli UT checkpoints?</span>
+            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-cargo-red">expand_more</span>
+          </summary>
+          <p class="text-steel-gray text-sm mt-3 leading-relaxed border-t border-slate-200 pt-3">
+            Yes. Our local branch office verifies all e-way bills and UT tax invoice documentation to prevent border entry delays.
+          </p>
+        </details>
+        <details class="group p-5 bg-slate-50 rounded-xl open:shadow-md transition-all duration-300">
+          <summary class="font-semibold text-deep-onyx cursor-pointer list-none flex justify-between items-center">
+            <span>What is the average transit duration from Silvassa to Delhi NCR?</span>
+            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-cargo-red">expand_more</span>
+          </summary>
+          <p class="text-steel-gray text-sm mt-3 leading-relaxed border-t border-slate-200 pt-3">
+            It takes average 48 to 60 hours. Our GPS-guided trucks run on express national routes to ensure fast and safe delivery.
+          </p>
+        </details>
       </div>
     </div>
   </section>
@@ -509,6 +963,56 @@ specializing in FTL(full truck load), PTL(part truck load), and specialized logi
 </form>
 </div>
 </div>
+<!-- Location Links Matrix -->
+<div class="max-w-container-max mx-auto px-6 md:px-margin-desktop border-t border-white/5 pt-12 mt-12">
+  <h4 class="text-white font-bold font-headline-md text-sm uppercase tracking-wider mb-6">Our Logistics Network</h4>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-xs text-on-tertiary-container">
+    <div>
+      <h5 class="text-cargo-red font-bold mb-3 uppercase">Delhi-NCR Region</h5>
+      <ul class="space-y-2">
+        <li><a class="hover:text-cargo-red transition-colors" href="best-logistics-company-in-delhi-ncr.html">Best Logistics Company in Delhi NCR</a></li>
+        <li><a class="hover:text-cargo-red transition-colors" href="best-logistics-company-in-noida.html">Logistics Service Provider in Noida</a></li>
+        <li><a class="hover:text-cargo-red transition-colors" href="best-logistics-company-in-gurugram.html">Best Logistics Company in Gurugram</a></li>
+        <li><a class="hover:text-cargo-red transition-colors" href="best-logistics-company-in-ghaziabad.html">Logistics Service Provider in Ghaziabad</a></li>
+        <li><a class="hover:text-cargo-red transition-colors" href="best-logistics-company-in-faridabad.html">Best Logistics Company in Faridabad</a></li>
+        <li><a class="hover:text-cargo-red transition-colors" href="best-logistics-company-in-bahadurgarh.html">Logistics Service Provider in Bahadurgarh</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 class="text-cargo-red font-bold mb-3 uppercase">Vapi & South Gujarat</h5>
+      <ul class="space-y-2">
+        <li><a class="hover:text-cargo-red transition-colors" href="best-logistics-company-in-vapi.html">Best Logistics Company in Vapi</a></li>
+        <li><a class="hover:text-cargo-red transition-colors" href="best-transport-in-vapi.html">Best Transporter in Vapi</a></li>
+        <li><a class="hover:text-cargo-red transition-colors" href="top-10-logistics-companies-in-vapi.html">Top 10 Logistics Companies in Vapi</a></li>
+        <li><a class="hover:text-cargo-red transition-colors" href="best-logistics-company-in-ahmedabad.html">Best Logistics Company in Ahmedabad</a></li>
+        <li><a class="hover:text-cargo-red transition-colors" href="best-logistics-company-in-rajkot.html">Best Logistics Company in Rajkot</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 class="text-cargo-red font-bold mb-3 uppercase">Union Territories</h5>
+      <ul class="space-y-2">
+        <li><a class="hover:text-cargo-red transition-colors" href="best-logistics-company-in-daman.html">Best Logistics Company in Daman</a></li>
+        <li><a class="hover:text-cargo-red transition-colors" href="best-transport-in-daman.html">Best Transporter in Daman</a></li>
+        <li><a class="hover:text-cargo-red transition-colors" href="top-10-logistics-companies-in-daman.html">Top 10 Logistics Companies in Daman</a></li>
+        <li><a class="hover:text-cargo-red transition-colors" href="best-logistics-company-in-silvassa.html">Best Logistics Company in Silvassa</a></li>
+        <li><a class="hover:text-cargo-red transition-colors" href="best-transport-in-silvassa.html">Best Transporter in Silvassa</a></li>
+        <li><a class="hover:text-cargo-red transition-colors" href="top-10-logistics-companies-in-silvassa.html">Top 10 Logistics Companies in Silvassa</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 class="text-cargo-red font-bold mb-3 uppercase">Statewide & National</h5>
+      <ul class="space-y-2">
+        <li><a class="hover:text-cargo-red transition-colors" href="best-logistics-company-in-gujarat.html">Best Logistics Company in Gujarat</a></li>
+        <li><a class="hover:text-cargo-red transition-colors" href="best-transport-in-gujarat.html">Best Transporter in Gujarat</a></li>
+        <li><a class="hover:text-cargo-red transition-colors" href="top-10-logistics-companies-in-gujarat.html">Top 10 Logistics Companies in Gujarat</a></li>
+        <li><a class="hover:text-cargo-red transition-colors" href="best-logistics-company-in-mumbai.html">Logistics Services Provider in Mumbai</a></li>
+        <li><a class="hover:text-cargo-red transition-colors" href="best-logistics-company-in-hyderabad.html">Logistics Services Provider in Hyderabad</a></li>
+        <li><a class="hover:text-cargo-red transition-colors" href="best-logistics-company-in-vijaywada.html">Logistics Services Provider in Vijaywada</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 <div class="max-w-container-max mx-auto px-margin-desktop mt-stack-lg pt-stack-md border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-12">
 <p class="text-on-tertiary-container font-label-mono text-label-mono">&copy; 2005 Supreme Express Cargo. A Complete Transport Solution.</p>
 <div class="flex gap-6">
