@@ -4,12 +4,12 @@
 <!-- Performance Preconnects -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" href="css/tailwind.min.css" as="style"><link rel="stylesheet" href="css/tailwind.min.css">
+<link rel="stylesheet" href="css/tailwind.min.css">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="preconnect" href="https://connect.facebook.net">
 <!-- Preload LCP Logo -->
 <link rel="preload" as="image" href="images/logo.png" fetchpriority="high">
-<link rel='preload' as='image' href='images/services-warehouse.webp=w1280' fetchpriority='high'>
+<link rel='preload' as='image' href='images/services-warehouse.webp' fetchpriority='high'>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Industrial Warehousing & Storage | Supreme Express Cargo</title>
@@ -27,13 +27,13 @@
 <meta property="og:description" content="Secure, climate-controlled industrial warehousing and inventory storage solutions. Advanced inventory management with 24/7 access and tracking.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.supremeexpresscargo.in/warehousing-services.html">
-<meta property="og:image" content="images/services-warehouse.webp=w1280">
+<meta property="og:image" content="images/services-warehouse.webp">
 
 <!-- X (Twitter) Cards -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Industrial Warehousing & Storage Services | Supreme Express Cargo">
 <meta name="twitter:description" content="Secure, climate-controlled industrial warehousing and inventory storage solutions. Advanced inventory management with 24/7 access and tracking.">
-<meta name="twitter:image" content="images/services-warehouse.webp=w1280">
+<meta name="twitter:image" content="images/services-warehouse.webp">
 
 <!-- Google Analytics (gtag.js) - Deferred to improve speed -->
 <script>
@@ -67,14 +67,21 @@
 
 <!-- Tailwind -->
 
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" media="print" onload="this.media='all'">
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" media="print" onload="this.media='all'">
 <style>
   html { scroll-behavior: smooth; }
   .material-symbols-outlined {
       font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
       display: inline-block;
       vertical-align: middle;
+      width: 1em;
+      height: 1em;
+      overflow: hidden;
+      white-space: nowrap;
+      text-transform: none;
+      word-wrap: normal;
+      direction: ltr;
   }
   .fade-in-up { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
   .fade-in-up.visible { opacity: 1; transform: translateY(0); }
@@ -216,7 +223,7 @@
 <main class="pt-24">
   <!-- Hero Section -->
   <section class="relative h-[400px] flex items-center overflow-hidden">
-    <img decoding="async" width="1280" height="720" fetchpriority="high" alt="Modern warehousing facility with high-density storage racking systems and forklift operations representing Warehousing services" class="absolute inset-0 w-full h-full object-cover" src="images/services-warehouse.webp=w1280">
+    <img decoding="async" width="1280" height="720" fetchpriority="high" alt="Modern warehousing facility with high-density storage racking systems and forklift operations representing Warehousing services" class="absolute inset-0 w-full h-full object-cover" src="images/services-warehouse.webp">
     <div class="absolute inset-0 bg-gradient-to-r from-deep-onyx/90 to-deep-onyx/40"></div>
     <div class="relative max-w-container-max mx-auto w-full px-margin-mobile md:px-margin-desktop text-white">
       <span class="font-label-mono text-cargo-red bg-white/10 backdrop-blur-sm px-4 py-1 rounded-full border border-white/20 mb-4 inline-block">SECURE STORAGE SPACE</span>
